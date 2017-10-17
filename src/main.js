@@ -9,7 +9,12 @@ import {
   VIcon,
   VGrid,
   VToolbar,
-  transitions
+  transitions,
+  VCard,
+  VTextField,
+  VForm,
+  VParallax,
+  VDivider
 } from 'vuetify'
 import Scroll from 'vue-scrollto'
 import { store } from './store'
@@ -35,7 +40,12 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
-    transitions
+    transitions,
+    VCard,
+    VTextField,
+    VForm,
+    VParallax,
+    VDivider
   }
 })
 
