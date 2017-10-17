@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout>
       <v-flex xs12 class="test text-xs-center">
-        <img src="/static/birka.png" alt="background">
+        <img src="/static/birka2.jpg" alt="background">
         <div class="content">
           <div class="avatar">
             <img src="http://funkyimg.com/i/2ynJE.png" alt="Oksana">
@@ -25,7 +25,7 @@
   position relative
   img
     width 100%
-    max-height 700px
+    max-height 900px
 
 .avatar
   height 300px

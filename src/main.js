@@ -19,6 +19,7 @@ import {
 import Scroll from 'vue-scrollto'
 import { store } from './store'
 import Carousel from 'vue-carousel-3d'
+import './stylus/main.styl'
 import App from './App.vue'
 
 
