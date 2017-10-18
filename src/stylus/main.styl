@@ -9,7 +9,7 @@
 
 //  variables
 $primary = #F5BA13
-
+$red = rgba(255,0,0,.7)
 
 // styles
 
@@ -27,7 +27,7 @@ $primary = #F5BA13
 
 a
   text-decoration: none
-
+/* using */
 .backgroundText
   min-height 40px
   padding: 5px 10px
@@ -42,13 +42,13 @@ a
     font-weight: bolder
     .darken
       color #808080
-
+// using
 .flexContainer
   display flex
   align-items center
   justify-content center
   min-height 230px
-
+// using
 .iconBackground
   width 120px
   height 120px
@@ -56,38 +56,33 @@ a
   border-radius 50%
   position relative
   box-shadow 1px 1px 1px #333
-
+// using
 .form
-  background-color #F1B415 !important
+  background-color $red !important
   border-radius 6px
   padding 1.5rem 2rem
-  box-shadow 0px 0px 10px 5px $primary
-
+  box-shadow 0px 0px 7px 5px $red
+// using
 .myBtn
-  background-color red !important
+  background-color $primary !important
+  box-shadow: 0px 0px 5px 5px $primary
   color #fff !important
-  text-shadow 1px 1px 1px #333
-
-.capital
-  font-weight bold
-  font-size 1.5rem
-  background-color #E8E7E7
-  box-shadow 0px 0px 5px 5px #E8E7E7
-  margin-bottom: 1rem
-  min-height 50px
-  display flex
-  justify-content center
-  align-items center
-  color #A7A7A7
-
+  font-weight: bolder
+  letter-spacing: 0.1rem
+// using
 .border
   border 1px dashed #A7A7A7
   margin 1rem 0
 
-.text
-  color #A7A7A7
-  font-size 1.2rem
-  margin-bottom 2rem
+
+// .input-group__input
+  // background-color: #fff
+
+.application--light .input-group:not(.input-group--error) label
+  color #fff
+
+.application--light .input-group input, .application--light .input-group textarea
+  color #fff
 
 .application--light .list
   background-color: $primary
