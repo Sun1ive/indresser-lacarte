@@ -12,6 +12,8 @@
     <section class="Slider">
       <app-slider></app-slider>
     </section>
+    <!-- confidence -->
+    <app-confidence></app-confidence>
     <!-- catalog -->
     <section class="catalog">
       <app-catalog></app-catalog>
@@ -47,6 +49,7 @@
 import banner from './banner'
 import pains from './pains'
 import slider from './slider'
+import confidence from './confidence'
 import catalog from './catalog'
 import reviews from './reviews'
 import video from './video'
@@ -61,6 +64,7 @@ import special from './special'
       'app-banner': banner,
       'app-pains': pains,
       'app-slider': slider,
+      'app-confidence': confidence,
       'app-catalog': catalog,
       'app-reviews': reviews,
       'app-video': video,

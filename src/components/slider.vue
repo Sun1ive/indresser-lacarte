@@ -8,7 +8,7 @@
       </div>
     </v-layout>
     <v-layout justify-center align-center class="carouselContainer">
-      <carousel-3d autoplay :autoplayTimeout="5000" autoplayHoverPause :width="450" :height="630" :border="0">
+      <carousel-3d autoplay :autoplayTimeout="5000" autoplayHoverPause :width="450" :height="600" :border="0">
         <slide :index="i" v-for="(item, i) in collection" :key="i">
           <img :src="item.img" :alt="item.title">
         </slide>
@@ -41,9 +41,12 @@
 .carousel-3d-container
   margin 0
   background-color #F3AF20
+  padding: 2rem 0
+  height: 650px !important
 
 
 .carousel-3d-slide
   border-radius 10px
+  box-shadow 0 0 15px 1px #333
 
 </style>
