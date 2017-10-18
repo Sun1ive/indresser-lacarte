@@ -1,5 +1,12 @@
 <template>
   <v-container fluid>
+    <v-layout row wrap justify-center align-center>
+      <div class="backgroundText">
+        <div>
+          <span class="darken">Знакомтесь</span> с новым брендом качественной одежды <span class="darken">inDresser</span>
+        </div>
+      </div>
+    </v-layout>
     <v-layout justify-center align-center class="carouselContainer">
       <carousel-3d autoplay :autoplayTimeout="5000" autoplayHoverPause :width="450" :height="630" :border="0">
         <slide :index="i" v-for="(item, i) in collection" :key="i">
@@ -21,6 +28,13 @@
 </script>
 
 <style scoped lang="stylus">
+.container
+  background-color #F3AF20
+  padding: 4rem 0
+
+.backgroundText
+  margin-bottom  3rem
+
 .carouselContainer
   min-height 600px
 
@@ -31,6 +45,5 @@
 
 .carousel-3d-slide
   border-radius 10px
-
 
 </style>

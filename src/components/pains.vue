@@ -31,9 +31,12 @@
   top -50%
   right -10%
 
+.backgroundText
+  margin-left 6rem
+
 .flexContainer
   &:first-child
-    margin-left 5rem
+    margin-left 9rem
   &:last-child
-    margin-left 15rem
+    margin-left 18rem
 </style>
