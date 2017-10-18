@@ -24,6 +24,10 @@
     <section class="deliver">
       <app-delivery></app-delivery>
     </section>
+    <!-- what ull get -->
+    <section class="whatullget">
+      <app-whatullget></app-whatullget>
+    </section>
     <!-- reviews -->
     <section class="reviews">
       <app-reviews></app-reviews>
@@ -58,6 +62,7 @@ import slider from './slider'
 import confidence from './confidence'
 import catalog from './catalog'
 import delivery from './delivery'
+import whatullget from './whatullget'
 import reviews from './reviews'
 import video from './video'
 import request from './request'
@@ -74,6 +79,7 @@ import special from './special'
       'app-confidence': confidence,
       'app-catalog': catalog,
       'app-delivery': delivery,
+      'app-whatullget': whatullget,
       'app-reviews': reviews,
       'app-video': video,
       'app-request': request,
