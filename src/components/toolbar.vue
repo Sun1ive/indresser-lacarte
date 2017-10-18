@@ -31,9 +31,9 @@
       <v-spacer></v-spacer>
         <v-btn flat class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
-       <v-icon medium class="red--text mx-2">call</v-icon><a href="tel:3336621">073-02-02-090</a>
+       <a href="tel:3336621">+38(068)0202090</a>
       <v-spacer></v-spacer>
-      <span>Меню</span>
+      <div class="text">Меню</div>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
   </header>
@@ -68,4 +68,19 @@
   color #fff !important
   border-radius 6px
   font-weight bold
+
+a
+  color #fff
+  font-size 2rem
+
+.text
+  font-weight bolder
+  font-size 2rem
+
+.btn--icon
+  width 48px
+  height 48px
+
+.btn .btn__content .icon
+  font-size 3rem
 </style>
