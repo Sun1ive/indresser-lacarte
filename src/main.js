@@ -27,7 +27,7 @@ Vue.use(Carousel)
 Vue.use(Scroll, {
   container: 'body',
   duration: 500,
-  offset: -200,
+  offset: 0,
   cancelable: true,
   easing: 'ease'
 })

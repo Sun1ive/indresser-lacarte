@@ -6,11 +6,18 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     menu: [
-      { title: 'button', icon: 'star', scrollTo: '3' },
-      { title: 'button2', icon: 'star', scrollTo: '3' },
-      { title: 'button3', icon: 'star', scrollTo: '3' },
-      { title: 'button4', icon: 'star', scrollTo: '3' },
-      { title: 'button5', icon: 'star', scrollTo: '3' },
+      { title: 'Pains', icon: '3d_rotation', scrollTo: ".pains" },
+      { title: 'Slider', icon: 'autorenew', scrollTo: '.slider' },
+      { title: 'Confidence', icon: 'alarm_on', scrollTo: '.confidence' },
+      { title: 'Catalog', icon: 'bookmark', scrollTo: '.catalog' },
+      { title: 'Delivery', icon: 'star', scrollTo: '.deliver' },
+      { title: 'What u ll get', icon: 'star', scrollTo: '.whatullget' },
+      { title: 'Reviews', icon: 'star', scrollTo: '.reviews' },
+      { title: 'Video', icon: 'star', scrollTo: '.video' },
+      { title: 'Request', icon: 'star', scrollTo: '.request' },
+      { title: 'Comments', icon: 'star', scrollTo: '.comments' },
+      { title: 'Collection', icon: 'star', scrollTo: '.collection' },
+      { title: 'Special', icon: 'star', scrollTo: '.special' },
     ],
     collection: [
       {

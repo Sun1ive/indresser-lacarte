@@ -12,7 +12,7 @@
           <v-list-tile-action>
             <v-icon medium class="red--text">{{ item.icon }}</v-icon>
           </v-list-tile-action>
-          <v-list-tile-content @click.stop="drawer = false" v-scroll-to="item.scroll">
+          <v-list-tile-content @click.stop="drawer = false" v-scroll-to="item.scrollTo">
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -29,7 +29,7 @@
     <v-toolbar :fixed="isFixed">
       <v-toolbar-title @click="scrollTop"><img class="logo" src="/static/logo1.png" alt="logo"></v-toolbar-title>
       <v-spacer></v-spacer>
-        <v-btn flat class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
+        <v-btn class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
        <a href="tel:3336621">+38(068)0202090</a>
       <v-spacer></v-spacer>
@@ -64,9 +64,9 @@
 
 <style scoped lang="stylus">
 .request
-  background-color red !important
+  background-color rgba(255,0,0,.8) !important
+  box-shadow 0px 0px 3px 3px rgba(255,0,0,.7)
   color #fff !important
-  border-radius 6px
   font-weight bold
 
 a
@@ -83,4 +83,7 @@ a
 
 .btn .btn__content .icon
   font-size 3rem
+
+.list__tile__title
+  font-size 1.3rem
 </style>

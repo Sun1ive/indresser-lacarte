@@ -9,7 +9,7 @@
       <app-pains></app-pains>
     </section>
     <!-- slider -->
-    <section class="Slider">
+    <section class="slider">
       <app-slider></app-slider>
     </section>
     <!-- confidence -->
