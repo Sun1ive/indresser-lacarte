@@ -1,9 +1,11 @@
 <template>
   <v-container fluid>
-    <v-parallax src="/static/special.png" height="500">
-      <v-layout row wrap justify-center align-center>
-        <v-flex xs12 lg4 class="text-xs-center">
-          <div class="capital"><span>Узнайте о специальном предложении</span></div>
+    <v-parallax src="/static/special.png" height="850">
+      <v-layout row wrap justify-end align-center>
+        <v-flex xs12 lg6 class="text-xs-center">
+          <div class="backgroundText">
+            <div>Узнайте о специальном предложении</div>
+          </div>
           <div class="border"></div>
           <div class="text"><span>Мы доставим Ваш заказ Вам в офис или по месту проживания</span></div>
           <v-form class="form text-xs-right">
@@ -24,5 +26,13 @@
 </script>
 
 <style scoped lang="stylus">
+.layout
+  max-width 1280px
+  margin 0 auto
+  width 100%
 
+.text
+  font-size 1.2rem
+  color #a7a7a7
+  margin-bottom 2rem
 </style>

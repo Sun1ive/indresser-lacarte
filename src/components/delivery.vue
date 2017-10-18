@@ -3,7 +3,7 @@
     <v-layout>
       <v-flex xs12 class="conf">
         <div class="iconBackground">
-          <v-icon>location_on</v-icon>
+          <img src="/static/dostavka.png" alt="prochnost" class="icon">
         </div>
         <div class="backgroundText">
           <div>Наши киленты <span class="darken">сами выбирают место доставки</span></div>
@@ -16,4 +16,8 @@
 
 <style lang="stylus" scoped>
 @import '../stylus/infoblock.styl'
+
+.icon
+  width 200px !important
+  top -15% !important
 </style>

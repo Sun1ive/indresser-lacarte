@@ -1,10 +1,10 @@
 <template>
   <v-container fluid grid-list-md>
     <v-layout justify-center align-center>
-      <div class="backgroundText mb-4"><span>Получить свой заказ очень просто:</span></div>
+      <div class="backgroundText mt-5 mb-3"><div>Получить свой заказ очень просто:</div></div>
     </v-layout>
     <v-layout justify-center align-center row wrap>
-      <v-flex class="text-xs-center tt" xs12 sm6 lg2 v-for="(item, i) in terms" :key="i">
+      <v-flex class="text-xs-center tt" xs12 sm6 lg4 v-for="(item, i) in terms" :key="i">
         <div class="box">{{ item.position }}</div>
         <div class="pt-3">{{ item.title }}</div>
       </v-flex>
@@ -52,7 +52,8 @@
   justify-content center
   flex-direction column
   align-items center
-  font-size 2.1rem
+  font-size 3rem
+  line-height 3rem
   font-weight bold
   color #A7A7A7
 
@@ -66,4 +67,14 @@
   background-color #F3B020
   font-size 3rem
   color #fff
+  position relative
+  overflow hidden
+  &:before
+    position absolute
+    content ''
+    top 100%
+    left 0
+    height 100px
+    width 100px
+    background-color rgba(243,176,32, .3)
 </style>
