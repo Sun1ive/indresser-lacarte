@@ -4,6 +4,10 @@
     <section class="banner">
       <app-banner></app-banner>
     </section>
+    <!-- pains -->
+    <section class="pains">
+      <app-pains></app-pains>
+    </section>
     <!-- slider -->
     <section class="Slider">
       <app-slider></app-slider>
@@ -41,6 +45,7 @@
 
 <script>
 import banner from './banner'
+import pains from './pains'
 import slider from './slider'
 import catalog from './catalog'
 import reviews from './reviews'
@@ -54,6 +59,7 @@ import special from './special'
   export default {
     components: {
       'app-banner': banner,
+      'app-pains': pains,
       'app-slider': slider,
       'app-catalog': catalog,
       'app-reviews': reviews,
