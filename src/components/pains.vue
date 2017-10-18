@@ -3,7 +3,7 @@
     <v-layout column wrap align-start>
       <v-flex xs12 class="flexContainer">
         <div class="iconBackground">
-          <!-- <img class="imgIcon" src="/static/girl.jpg" alt="girlicon"> -->
+          <img class="imgIcon" src="/static/girl.png" alt="girlicon">
         </div>
         <div class="backgroundText">
           <div>
@@ -13,7 +13,7 @@
       </v-flex>
       <v-flex xs12 class="flexContainer">
         <div class="iconBackground">
-          <!-- <img class="imgIcon" src="/static/girl.jpg" alt="girlicon"> -->
+          <img class="imgIcon two" src="/static/money.png" alt="money">
         </div>
         <div class="backgroundText">
           <div>
@@ -28,8 +28,16 @@
 <style scoped lang="stylus">
 .imgIcon
   position absolute
-  top -50%
-  right -10%
+  top -15%
+  right -25%
+  max-width 100px
+  max-height 150px
+  width 100%
+
+.two
+  top 0
+  max-width 150px
+  max-height 200px
 
 .backgroundText
   margin-left 6rem
