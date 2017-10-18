@@ -25,6 +25,16 @@ $red = rgba(255,0,0,.7)
 .application > main
   flex-direction: column
 
+.application--light .input-group:not(.input-group--error) label
+  color #fff
+
+.application--light .input-group input, .application--light .input-group textarea
+  color #fff
+
+.application--light .list
+  background-color: $primary
+
+
 a
   text-decoration: none
 /* using */
@@ -78,11 +88,3 @@ a
 // .input-group__input
   // background-color: #fff
 
-.application--light .input-group:not(.input-group--error) label
-  color #fff
-
-.application--light .input-group input, .application--light .input-group textarea
-  color #fff
-
-.application--light .list
-  background-color: $primary

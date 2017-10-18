@@ -16,28 +16,5 @@
 
 
 <style scoped lang="stylus">
-.conf
-  display flex
-  flex-flow column wrap
-  align-items center
-  justify-content center
-  min-height 500px
-
-.iconBackground
-  position relative
-  .icon
-    position absolute
-    top 10%
-    left 40%
-    font-size 8rem
-    color rgba(255,0,0, .9)
-
-.backgroundText
-  margin 3rem 0
-
-.red--text
-  font-size 2rem
-  text-align center
-  font-weight bold
-  line-height 1.9rem
+@import '../stylus/infoblock.styl'
 </style>

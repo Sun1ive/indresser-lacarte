@@ -13,10 +13,16 @@
       <app-slider></app-slider>
     </section>
     <!-- confidence -->
-    <app-confidence></app-confidence>
+    <section class="confidence">
+      <app-confidence></app-confidence>
+    </section>
     <!-- catalog -->
     <section class="catalog">
       <app-catalog></app-catalog>
+    </section>
+    <!-- delivery -->
+    <section class="deliver">
+      <app-delivery></app-delivery>
     </section>
     <!-- reviews -->
     <section class="reviews">
@@ -51,6 +57,7 @@ import pains from './pains'
 import slider from './slider'
 import confidence from './confidence'
 import catalog from './catalog'
+import delivery from './delivery'
 import reviews from './reviews'
 import video from './video'
 import request from './request'
@@ -66,6 +73,7 @@ import special from './special'
       'app-slider': slider,
       'app-confidence': confidence,
       'app-catalog': catalog,
+      'app-delivery': delivery,
       'app-reviews': reviews,
       'app-video': video,
       'app-request': request,
