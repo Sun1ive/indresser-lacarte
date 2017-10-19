@@ -5,7 +5,7 @@
         <div class="iconBackground">
           <img src="/static/prochnost1.png" alt="procnost" class="icon">
         </div>
-        <div class="backgroundText">
+        <div class="backgroundText text-xs-center">
           <div>Наши киленты <span class="darken">Уверенны в inDresser</span></div>
         </div>
         <div class="red--text">Если Вам не подошел наш товар <br> мы гарантируем Вам обмен или возврат</div>

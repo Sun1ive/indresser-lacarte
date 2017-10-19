@@ -20,4 +20,14 @@
 .icon
   width 200px !important
   top -15% !important
+
+.conf
+  width 100%
+
+@media (max-width: 600px)
+  .conf
+    margin 2rem 0
+    text-align center
+  .red--text
+    font-size 1.5rem
 </style>

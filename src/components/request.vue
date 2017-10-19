@@ -2,12 +2,12 @@
   <v-container fluid>
     <v-parallax src="/static/collectionBanner.png" height="800">
       <v-layout class="mt-5" justify-start align-center>
-        <div class="backgroundText">
+        <div class="backgroundText text-xs-center">
           <div>Эту коллекцию очень быстро разбирают</div>
         </div>
       </v-layout>
       <v-layout justify-end align-end>
-        <div class="backgroundText idk">
+        <div class="backgroundText idk text-xs-center">
           <div>Узнайте или остался Ваш размер</div>
         </div>
       </v-layout>
@@ -37,5 +37,11 @@
 
 .container
   margin-top -1rem
+
+@media (max-width: 600px)
+  .idk
+    min-width 300px
+  .layout
+    justify-content center
 
 </style>

@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout column wrap align-center>
       <v-flex class="flexed mt-5 mb-0">
-        <div class="backgroundText">
+        <div class="backgroundText text-xs-center">
           <div>Почему эта коллекция практически распродана?</div>          
         </div>
       </v-flex>

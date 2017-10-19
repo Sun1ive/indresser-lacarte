@@ -42,6 +42,7 @@
 
 .backgroundText
   margin-bottom  3rem
+  text-align center
 
 .carouselContainer
   min-height 600px
@@ -56,5 +57,9 @@
 .carousel-3d-slide
   border-radius 10px
   box-shadow 0 0 15px 1px #333
+
+@media (max-width: 600px)
+  .backgroundText
+    text-align center
 
 </style>
