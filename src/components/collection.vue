@@ -1,16 +1,8 @@
 <template>
   <v-container fluid grid-list-lg>
-    <v-layout justify-center align-center>
-      <div class="backgroundText mt-5 mb-3"><div>Получить свой заказ очень просто:</div></div>
-    </v-layout>
-    <v-layout row wrap justify-center align-center>
-      <v-flex class="cont" xs12 sm6 md4 lg2 v-for="(item,i) in terms" :key="i">
-        <img :src="item.img" :alt="i">
-        <p>{{ item.title }}</p>
-      </v-flex>
-    </v-layout>
+    <easy></easy>
     <v-layout row wrap class="gallery">
-      <v-flex xs12 sm6 md4 lg3 v-for="(item, i) in collection" :key="i">
+      <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>
           <v-card-media :src="item.img" height="600"></v-card-media>
           <v-card-title>{{ item.title }}</v-card-title>
@@ -18,7 +10,6 @@
           <v-card-actions>
             <v-btn class="redd">Заказать</v-btn>
             <v-btn class="ml-0 redd">Подробно</v-btn>
-            <!-- <v-btn class="ml-0 orangee">Подробно</v-btn> -->
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -27,7 +18,11 @@
 </template>
 
 <script>
+import easy from './easy'
   export default {
+    components: {
+      easy
+    },
     data () {
       return {
         terms: [
@@ -50,26 +45,16 @@
 
 <style scoped lang="stylus">
 .container
-  box-shadow inset 0px 0px 5px 2px #333
   .gallery
     max-width 1600px
     margin 0 auto !important
     padding-bottom 3rem
-
-.cont
-  display flex
-  align-items center
-  justify-content center
-  flex-flow column wrap
-  p
-    font-size 1.3rem
 
 .redd
   background-color rgba(255,0,0, .9) !important
   color #fff
   box-shadow 0px 0px 5px 1px rgba(255,0,0, .9)
   margin-right 1rem
-  font-weight bold
 
 .card__actions
   justify-content center

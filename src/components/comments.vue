@@ -46,7 +46,7 @@
     color #fff
     h3
       font-weight bolder
-      font-size 4rem
+      font-size 2rem
       margin 2rem 0
     p
       font-size 1.2rem

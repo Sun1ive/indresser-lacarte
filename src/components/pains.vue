@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-layout column wrap justify-center align-start>
-      <v-flex xs12 class="flexContainer">
+    <v-layout column wrap>
+      <v-flex xs12 class="flexContainer text-xs-center">
         <div class="iconBackground">
           <img class="imgIcon" src="/static/girl.png" alt="girlicon">
         </div>
@@ -11,7 +11,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex xs12 class="flexContainer">
+      <v-flex xs12 class="flexContainer text-xs-center">
         <div class="iconBackground">
           <img class="imgIcon two" src="/static/money.png" alt="money">
         </div>
@@ -45,31 +45,38 @@
 
 .flexContainer
   width 100%
+  display flex
+  justify-content flex-start
   &:first-child
-    margin-left 9rem
+    margin-left 3rem
   &:last-child
-    margin-left 18rem
+    justify-content center
+    margin-left 3rem
 
 @media (max-width: 1950px)
   .backgroundText
     width 50%
 
 @media (max-width: 1500px)
-  .flexContainer
-    &:first-child
-      margin-left 1rem
-    &:last-child
-      margin-left 1rem
   .backgroundText
     margin-left 2rem
-    width: 70%
+    width: 50%
+
+@media (max-width: 1000px)
+  .flexContainer
+    flex-flow column wrap
+    align-items center
+    justify-content center
+    margin 3rem 0
+    &:first-child
+    &:last-child
+      margin-left 0
+    .backgroundText
+      width 90%
+      margin 3rem 0
 
 @media (max-width: 600px)
-  .flexContainer
-    flex-direction column
-    margin 3rem 0
   .backgroundText
     margin 1rem 0
     width 100%
-    text-align center
 </style>
