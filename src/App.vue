@@ -1,7 +1,9 @@
 <template>
   <v-app light>
     <!-- app toolbar -->
-    <app-toolbar></app-toolbar>
+    <transition name="fade">
+      <app-toolbar></app-toolbar>
+    </transition>
     <!-- app main -->
     <app-main></app-main>
     <!-- app footer -->
@@ -46,4 +48,5 @@ import footer from './components/footer'
 <style lang="stylus">
 body
   font-family Arial, Helvetica, sans-serif
+
 </style>

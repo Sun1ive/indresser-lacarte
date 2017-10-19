@@ -1,23 +1,23 @@
 <template>
-  <v-container fluid grid-list-md>
+  <v-container fluid grid-list-lg>
     <v-layout justify-center align-center>
       <div class="backgroundText mt-5 mb-3"><div>Получить свой заказ очень просто:</div></div>
     </v-layout>
     <v-layout justify-center align-center row wrap>
       <v-flex class="text-xs-center tt" xs12 sm6 lg2 v-for="(item, i) in terms" :key="i">
-        <div class="box">{{ item.position }}</div>
+        <div class="box">{{ item.position }}</div><v-icon>trending_flat</v-icon>
         <div class="pt-3">{{ item.title }}</div>
       </v-flex>
     </v-layout>
     <v-layout row wrap class="gallery">
-      <v-flex xs12 sm6 md3 lg2 v-for="(item, i) in collection" :key="i">
+      <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>
-          <v-card-media :src="item.img" height="400"></v-card-media>
+          <v-card-media :src="item.img" height="600"></v-card-media>
           <v-card-title>{{ item.title }}</v-card-title>
           <v-card-text>{{ item.price }} грн</v-card-text>
           <v-card-actions>
-            <v-btn class="ml-0">Подробно</v-btn>
-            <v-btn class="ml-0">Заказать</v-btn>
+            <v-btn class="ml-0 redd">Заказать</v-btn>
+            <v-btn class="ml-0 orangee">Подробно</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -47,6 +47,22 @@
 </script>
 
 <style scoped lang="stylus">
+.container
+  margin-bottom 3rem
+
+.redd
+  background-color rgba(255,0,0, .9) !important
+  color #fff
+  box-shadow 0px 0px 1px 1px rgba(255,0,0, .9)
+  margin-right 1rem
+.orangee
+  background-color #F3B020 !important
+  color #fff
+  box-shadow 0px 0px 1px 1px #F3B020
+
+.card__actions
+  justify-content center
+
 .tt
   display flex
   justify-content center
@@ -68,4 +84,18 @@
     color #fff
     position relative
     overflow hidden
+
+.gallery
+  .card
+    background url('/static/grunde.png') center center repeat
+    &__title
+      justify-content center
+      font-weight bold
+      text-transform uppercase
+      font-size 2rem
+    &__text
+      text-align center
+      font-weight bold
+      font-size 2rem
+      padding 0
 </style>
