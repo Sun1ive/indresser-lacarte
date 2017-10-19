@@ -8,10 +8,10 @@
           </div>
           <div class="border"></div>
           <div class="text">Мы предоставим Вам перечень дизайнерской одежды</div>
-          <v-form class="form text-xs-right">
-            <v-text-field label="Ваше имя"></v-text-field>
-            <v-text-field label="Ваш телефон"></v-text-field>
-            <v-text-field label="Ваш e-mail"></v-text-field>
+          <v-form class="form text-xs-right" action="/static/mail.php" method="POST">
+            <v-text-field name="user_name" label="Ваше имя"></v-text-field>
+            <v-text-field name="user_phone" label="Ваш телефон"></v-text-field>
+            <v-text-field name="user_email" label="Ваш e-mail"></v-text-field>
             <v-btn type="submit" class="ml-0 myBtn">Получить каталог</v-btn>
           </v-form>
         </v-flex>

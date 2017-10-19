@@ -3,10 +3,15 @@
     <v-layout justify-center align-center>
       <div class="backgroundText mt-5 mb-3"><div>Получить свой заказ очень просто:</div></div>
     </v-layout>
-    <v-layout justify-center align-center row wrap>
+<!--     <v-layout justify-center align-center row wrap>
       <v-flex class="text-xs-center tt" xs12 sm6 lg2 v-for="(item, i) in terms" :key="i">
         <div class="box">{{ item.position }}</div><v-icon>trending_flat</v-icon>
         <div class="pt-3">{{ item.title }}</div>
+      </v-flex>
+    </v-layout> -->
+    <v-layout justify-center align-center>
+      <v-flex xs12 sm6 lg2 v-for="(item, i) in terms" :key="i">
+        <span>{{ item.title }}</span><v-icon>{{ item.icon }}</v-icon>
       </v-flex>
     </v-layout>
     <v-layout row wrap class="gallery">
@@ -30,11 +35,11 @@
     data () {
       return {
         terms: [
-          { title: 'Выбери платье', position: 1 },
-          { title: 'Оставь заявку', position: 2 },
-          { title: 'Укажи адресс доставки', position: 3 },
-          { title: 'Получи свой заказ', position: 4 },
-          { title: 'Наслаждайся покупкой', position: 5 },
+          { title: 'Выберите платье', position: 1, icon: 'reply_all' },
+          { title: 'Оставьте заявку', position: 2, icon: 'reply_all' },
+          { title: 'Укажите адресс доставки', position: 3, icon: 'reply_all' },
+          { title: 'Получите свой заказ', position: 4, icon: 'reply_all' },
+          { title: 'Наслаждайтесь покупкой', position: 5, icon: 'star' },
         ]
       }
     },
@@ -66,15 +71,14 @@
 .tt
   display flex
   justify-content center
-  flex-direction column
   align-items center
-  font-size 3rem
+  font-size 2rem
   line-height 3rem
   font-weight bold
   color #A7A7A7
   .box
-    width 100px
-    height 100px
+    width 115px
+    height 115px
     border-radius 50%
     display flex
     justify-content center
@@ -84,6 +88,11 @@
     color #fff
     position relative
     overflow hidden
+  .icon
+    font-size 8rem
+    text-align center
+    transform rotateY(180deg)
+    color #F3B020
 
 .gallery
   .card
