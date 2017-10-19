@@ -93,11 +93,12 @@
 
 a
   color #fff
-  font-size 2rem
+  font-size 1.3rem
+  font-weight bolder
 
 .text
   font-weight bolder
-  font-size 2rem
+  font-size 1.3rem
 
 .btn--icon
   width 48px

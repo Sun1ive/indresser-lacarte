@@ -46,21 +46,21 @@
     color #fff
     h3
       font-weight bolder
-      font-size 5rem
+      font-size 4rem
       margin 2rem 0
     p
-      font-size 1.5rem
+      font-size 1.2rem
       padding-bottom .5rem
   .content
     margin 0 0 5rem 0
     min-height 100px
     width 100%
-    max-width 1000px
+    max-width 800px
     padding 1rem 0
     text-align center
     background-color #F3B020
     box-shadow 0px 0px 5px 7px #F3B020
-    font-size 1.7rem
+    font-size 1.3rem
     line-height 2rem
     font-weight bolder
     color #fff

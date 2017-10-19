@@ -13,14 +13,14 @@
   display flex
   align-items center
   justify-content center
-  min-height 200px
+  min-height 50px
   margin 3rem
   padding 1rem
   background-color #F5BA13
   box-shadow 0px 0px 7px 5px #F5BA13
   border-radius 8px
   font-weight bolder
-  font-size 2rem
+  font-size 1.4rem
   text-align center
   color #fff
 </style>

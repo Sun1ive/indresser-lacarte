@@ -22,7 +22,8 @@
           <v-card-text>{{ item.price }} грн</v-card-text>
           <v-card-actions>
             <v-btn class="ml-0 redd">Заказать</v-btn>
-            <v-btn class="ml-0 orangee">Подробно</v-btn>
+            <v-btn class="ml-0 redd">Подробно</v-btn>
+            <!-- <v-btn class="ml-0 orangee">Подробно</v-btn> -->
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -96,7 +97,8 @@
 
 .gallery
   .card
-    background url('/static/grunde.png') center center repeat
+    // background url('/static/grunde.png') center center repeat
+    background #F3B020 center center repeat
     &__title
       justify-content center
       font-weight bold

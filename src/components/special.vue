@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-parallax src="/static/special.png" height="850">
       <v-layout row wrap justify-end align-center>
-        <v-flex xs12 lg6 class="text-xs-center">
+        <v-flex xs12 sm6 lg4 class="text-xs-center">
           <div class="backgroundText">
             <div>Узнайте о специальном предложении</div>
           </div>

@@ -12,7 +12,7 @@
         </div>
       </v-layout>
       <v-layout align-center justify-end>
-        <v-flex xs12 sm6 lg4>
+        <v-flex xs12 sm6 lg3>
           <v-form class="form text-xs-right">
             <v-text-field label="Ваше имя"></v-text-field>
             <v-text-field label="Ваш телефон"></v-text-field>
@@ -32,9 +32,6 @@
 </script>
 
 <style scoped lang="stylus">
-.idk
-  min-width 630px
-
 .container
   margin-top -1rem
 
