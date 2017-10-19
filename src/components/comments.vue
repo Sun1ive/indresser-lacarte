@@ -21,6 +21,7 @@
       <v-flex class="flexed content">
           Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены. Рекомендую и Вам убедиться в этом.
       </v-flex>
+      <v-btn class="myBtn">Закажите платье сейчас</v-btn>
     </v-layout>
   </v-container>
 </template>
@@ -52,7 +53,6 @@
       font-size 1.2rem
       padding-bottom .5rem
   .content
-    margin 0 0 5rem 0
     min-height 100px
     width 100%
     max-width 500px
@@ -66,47 +66,9 @@
     color #fff
     border-radius 6px
 
+.myBtn
+  background-color rgba(255,0,0,0.8) !important
+  box-shadow 0px 0px 3px 3px rgba(255,0,0,0.7)
+  margin-bottom 6rem
 
-
-
-
-
-
-
-
-/* .avatar
-  width: 400px
-  height 400px
-  img
-    width 100%
-    border-radius 50%
-
-.data
-  color #fff
-  h3
-    font-weight bolder
-    font-size 5rem
-    margin 2rem 0
-  p
-    font-size 1.5rem
-    padding-bottom .5rem
-
-.flexed
-  display flex
-  justify-content center
-  flex-flow column wrap
-  align-items center
-  min-height 900px
-
-.content
-  width 50%
-  min-height 100px
-  text-align center
-  background-color #F3B020
-  box-shadow 0px 0px 5px 7px #F3B020
-  font-size 1.7rem
-  line-height 2rem
-  font-weight bolder
-  color #fff
-  border-radius 6px  */
 </style>

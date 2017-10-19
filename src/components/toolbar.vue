@@ -89,15 +89,12 @@
   background-color rgba(255,0,0,.8) !important
   box-shadow 0px 0px 3px 3px rgba(255,0,0,.7)
   color #fff !important
-  font-weight bold
 
 a
   color #fff
   font-size 1.3rem
-  font-weight bolder
 
 .text
-  font-weight bolder
   font-size 1.3rem
 
 .btn--icon

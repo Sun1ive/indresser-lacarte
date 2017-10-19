@@ -22,7 +22,7 @@
         </v-flex>
       </v-layout>
     </v-parallax>
-    <app-border></app-border>
+    <app-border class="marginTop"></app-border>
   </v-container>
 </template>
 
