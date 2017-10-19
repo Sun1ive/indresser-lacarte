@@ -1,18 +1,18 @@
 <template>
   <v-container fluid>
+    <app-border></app-border>
     <v-parallax src="/static/collectionBanner.png" height="800">
       <v-layout class="mt-5" justify-start align-center>
         <div class="backgroundText text-xs-center">
           <div>Эту коллекцию очень быстро разбирают</div>
         </div>
       </v-layout>
-      <v-layout justify-end align-end>
-        <div class="backgroundText idk text-xs-center">
-          <div>Узнайте или остался Ваш размер</div>
-        </div>
-      </v-layout>
       <v-layout align-center justify-end>
         <v-flex xs12 sm6 lg3>
+          <div class="backgroundText idk text-xs-center">
+            <div>Узнайте или остался Ваш размер</div>
+          </div>
+          <div class="border"></div>
           <v-form class="form text-xs-right">
             <v-text-field label="Ваше имя"></v-text-field>
             <v-text-field label="Ваш телефон"></v-text-field>
@@ -22,16 +22,24 @@
         </v-flex>
       </v-layout>
     </v-parallax>
+    <app-border></app-border>
   </v-container>
 </template>
 
 <script>
-  export default {
-    
+import border from './redborder'
+
+export default {
+  components: {
+    'app-border': border
   }
+}
 </script>
 
 <style scoped lang="stylus">
+.border
+  margin 2rem 0
+
 .container
   margin-top -1rem
 

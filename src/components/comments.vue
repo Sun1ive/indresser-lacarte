@@ -55,7 +55,7 @@
     margin 0 0 5rem 0
     min-height 100px
     width 100%
-    max-width 800px
+    max-width 500px
     padding 1rem 0
     text-align center
     background-color #F3B020

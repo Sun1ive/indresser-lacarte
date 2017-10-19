@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-layout column wrap align-start>
+    <v-layout column wrap justify-center align-start>
       <v-flex xs12 class="flexContainer">
         <div class="iconBackground">
           <img class="imgIcon" src="/static/girl.png" alt="girlicon">
@@ -44,10 +44,15 @@
   width 100%
 
 .flexContainer
+  width 100%
   &:first-child
     margin-left 9rem
   &:last-child
     margin-left 18rem
+
+@media (max-width: 1950px)
+  .backgroundText
+    width 50%
 
 @media (max-width: 1500px)
   .flexContainer
