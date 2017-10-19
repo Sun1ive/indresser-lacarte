@@ -4,13 +4,15 @@
     <v-layout row wrap class="gallery">
       <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>
-          <v-card-media :src="item.img" height="600"></v-card-media>
-          <v-card-title>{{ item.title }}</v-card-title>
-          <v-card-text>{{ item.price }} грн</v-card-text>
-          <v-card-actions>
-            <v-btn class="redd">Заказать</v-btn>
-            <v-btn class="ml-0 redd">Подробно</v-btn>
-          </v-card-actions>
+          <v-card-media :src="item.img" height="500"></v-card-media>
+          <div class="wrapper">
+            <v-card-title>{{ item.title }}</v-card-title>
+            <v-card-text>{{ item.price }} грн</v-card-text>
+            <v-card-actions class="text-xs-center">
+              <v-btn class="redd ml-2">Заказать</v-btn>
+              <v-btn class="redd">Подробно</v-btn>
+            </v-card-actions>
+          </div>
         </v-card>
       </v-flex>
     </v-layout>
@@ -49,6 +51,8 @@ import easy from './easy'
     max-width 1600px
     margin 0 auto !important
     padding-bottom 3rem
+    .wrapper
+      box-shadow 0px 0px 5px 2px #F3B020
 
 .redd
   background-color rgba(255,0,0, .9) !important
@@ -56,8 +60,6 @@ import easy from './easy'
   box-shadow 0px 0px 5px 1px rgba(255,0,0, .9)
   margin-right 1rem
 
-.card__actions
-  justify-content center
 
 .gallery
   .card
@@ -67,10 +69,12 @@ import easy from './easy'
       justify-content center
       font-weight bold
       text-transform uppercase
-      font-size 2rem
+      font-size 1.4rem
     &__text
       text-align center
       font-weight bold
-      font-size 2rem
+      font-size 1.4rem
       padding 0
+    &__actions
+      justify-content center
 </style>

@@ -63,7 +63,8 @@ export const store = new Vuex.Store({
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
     ],
-    fixed: false
+    fixed: false,
+    catalogDialog: false
   },
   mutations: {
     isFixed: state => {
@@ -71,6 +72,12 @@ export const store = new Vuex.Store({
     },
     notFixed: state => {
       state.fixed = false
+    },
+    showCatalog: state => {
+      state.catalogDialog = true
+    },
+    closeCatalog: state => {
+      state.catalogDialog = false
     }
   }
 });

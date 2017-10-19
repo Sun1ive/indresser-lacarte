@@ -31,7 +31,7 @@
         <img style="width: 100%" class="logo" src="/static/logo1.png" alt="logo">
       </v-toolbar-title>
       <v-spacer></v-spacer>
-        <v-btn class="request hidden-sm-and-down">Получить весь каталог коллекции</v-btn>
+        <v-btn class="request hidden-sm-and-down" @click.stop="showForm">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
        <a class="hidden-xs-only" href="tel:380680202090">+38(068)0202090</a>
       <v-spacer></v-spacer>
@@ -65,6 +65,9 @@
           toolbar.classList.add('notFixed')
           console.log('234');
         }
+      },
+      showForm () {
+        this.$store.commit('showCatalog')
       }
     },
     computed: {

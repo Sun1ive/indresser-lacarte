@@ -9,8 +9,8 @@
           <div class="border"></div>
           <div class="text"><span>Мы доставим Ваш заказ Вам в офис или по месту проживания</span></div>
           <v-form class="form text-xs-right" method="POST" action="/static/sendmail.php">
-            <v-text-field name="user_name" label="Ваше имя"></v-text-field>
-            <v-text-field name="user_phone" label="Ваш телефон"></v-text-field>
+            <v-text-field required name="user_name" label="Укажите Ваше имя"></v-text-field>
+            <v-text-field required name="user_phone" label="Укажите Ваш телефон"></v-text-field>
             <v-btn type="submit" class="ml-0 myBtn">Получить каталог</v-btn>
           </v-form>
         </v-flex>

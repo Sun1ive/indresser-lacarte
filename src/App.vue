@@ -6,6 +6,9 @@
     <app-main></app-main>
     <!-- app footer -->
     <app-footer></app-footer>
+
+    <!-- modals -->
+    <app-catalogModal></app-catalogModal>
   </v-app>
 </template>
 
@@ -13,12 +16,14 @@
 import toolbar from './components/toolbar'
 import main from './components/main'
 import footer from './components/footer'
+import catalogModal from './components/popups/catalogmodal'
 
   export default {
     components: {
       'app-toolbar': toolbar,
       'app-main': main,
-      'app-footer': footer
+      'app-footer': footer,
+      'app-catalogModal': catalogModal
     },
     data () {
       return {

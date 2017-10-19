@@ -56,7 +56,7 @@
 
 .carousel-3d-slide
   border-radius 10px
-  box-shadow 0 0 15px 1px #333
+  box-shadow 0 0 15px 4px #c9c9c9
 
 @media (max-width: 600px)
   .backgroundText
