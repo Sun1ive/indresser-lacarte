@@ -27,13 +27,15 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar :fixed="isFixed">
-      <v-toolbar-title @click="scrollTop"><img class="logo" src="/static/logo1.png" alt="logo"></v-toolbar-title>
+      <v-toolbar-title @click="scrollTop">
+        <img style="width: 100%" class="logo" src="/static/logo1.png" alt="logo">
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-        <v-btn class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
+        <v-btn class="request hidden-sm-and-down">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
-       <a href="tel:3336621">+38(068)0202090</a>
+       <a class="hidden-xs-only" href="tel:380680202090">+38(068)0202090</a>
       <v-spacer></v-spacer>
-      <div class="text">Меню</div>
+      <div class="text hidden-sm-and-down">Меню</div>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
   </header>
@@ -83,20 +85,6 @@
 </script>
 
 <style scoped lang="stylus">
-.fixed
-  position fixed
-  top 0
-  animation an
-  animation-duration 1s
-
-@keyframes an {
-  from {
-    opacity 0
-  } to {
-    opacity 1
-  }
-}
-
 .request
   background-color rgba(255,0,0,.8) !important
   box-shadow 0px 0px 3px 3px rgba(255,0,0,.7)
@@ -120,4 +108,18 @@ a
 
 .list__tile__title
   font-size 1.3rem
+
+.fixed
+  position fixed
+  top 0
+  animation fade
+  animation-duration 1s
+
+@keyframes fade {
+  from {
+    opacity 0
+  } to {
+    opacity 1
+  }
+}
 </style>

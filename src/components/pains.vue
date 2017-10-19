@@ -41,10 +41,30 @@
 
 .backgroundText
   margin-left 6rem
+  width 100%
 
 .flexContainer
   &:first-child
     margin-left 9rem
   &:last-child
     margin-left 18rem
+
+@media (max-width: 1500px)
+  .flexContainer
+    &:first-child
+      margin-left 1rem
+    &:last-child
+      margin-left 1rem
+  .backgroundText
+    margin-left 2rem
+    width: 70%
+
+@media (max-width: 600px)
+  .flexContainer
+    flex-direction column
+    margin 3rem 0
+  .backgroundText
+    margin 1rem 0
+    width 100%
+    text-align center
 </style>
