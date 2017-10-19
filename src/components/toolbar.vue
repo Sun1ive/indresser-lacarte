@@ -49,6 +49,20 @@
     methods: {
       scrollTop () {
         window.scrollTo(0, 0)
+      },
+      test () {
+        let toolbar = document.querySelector('.toolbar')
+        let offset = window.pageYOffset
+
+        if (offset >= 250 && !toolbar.classList.contains('fixed')) {
+          toolbar.classList.remove('notFixed')
+          toolbar.classList.add('fixed')
+          console.log('123');
+        } else if (offset <= 250 && toolbar.classList.contains('fixed')) {
+          toolbar.classList.remove('fixed')
+          toolbar.classList.add('notFixed')
+          console.log('234');
+        }
       }
     },
     computed: {
@@ -58,11 +72,31 @@
       isFixed () {
         return this.$store.state.fixed
       }
+    },
+    created () {
+      window.addEventListener('scroll', this.test)
+    },
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.test)
     }
   }
 </script>
 
 <style scoped lang="stylus">
+.fixed
+  position fixed
+  top 0
+  animation an
+  animation-duration 1s
+
+@keyframes an {
+  from {
+    opacity 0
+  } to {
+    opacity 1
+  }
+}
+
 .request
   background-color rgba(255,0,0,.8) !important
   box-shadow 0px 0px 3px 3px rgba(255,0,0,.7)
