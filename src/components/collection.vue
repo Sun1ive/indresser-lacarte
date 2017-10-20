@@ -9,7 +9,7 @@
             <v-card-title>{{ item.title }}</v-card-title>
             <v-card-text>{{ item.price }} грн</v-card-text>
             <v-card-actions class="text-xs-center">
-              <v-btn class="redd" @click="showDetails(item)">Подробно</v-btn>
+              <v-btn class="redd ml-3" @click="showDetails(item)">Подробно</v-btn>
               <v-btn class="redd ml-2" @click="showOrder(item)">Заказать</v-btn>
             </v-card-actions>
           </div>
@@ -65,7 +65,10 @@ import easy from './easy'
     margin 0 auto !important
     padding-bottom 3rem
     .wrapper
-      box-shadow 0px 0px 5px 2px #F3B020
+      position relative
+      overflow hidden
+      box-shadow 0px 0px 5px 2px rgba(#F3B020, .7)
+      z-index 123
 
 .redd
   background-color rgba(255,0,0, .9) !important
@@ -77,7 +80,7 @@ import easy from './easy'
 .gallery
   .card
     // background url('/static/grunde.png') center center repeat
-    background #F3B020 center center repeat
+    background-color rgba(#F3B020, .7)
     &__title
       justify-content center
       text-transform uppercase
@@ -88,4 +91,5 @@ import easy from './easy'
       padding 0
     &__actions
       justify-content center
+      text-align center
 </style>

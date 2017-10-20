@@ -10,13 +10,13 @@
     <v-layout justify-center align-center class="carouselContainer">
       <carousel-3d
       autoplay
-      :autoplayTimeout="4000"
+      :autoplayTimeout="3000"
       :autoplayHoverPause="true"
       :width="450"
       :height="600"
       controlsVisible
       :border="0"
-      :clickable="false">
+      >
         <slide :index="i" v-for="(item, i) in collection" :key="i">
           <img :src="item.img" :alt="item.title">
         </slide>
@@ -52,7 +52,6 @@
   background-color #F3AF20
   padding: 2rem 0
   height: 650px !important
-
 
 .carousel-3d-slide
   border-radius 10px

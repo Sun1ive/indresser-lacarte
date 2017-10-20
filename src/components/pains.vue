@@ -49,9 +49,13 @@
   justify-content flex-start
   &:first-child
     margin-left 3rem
+    margin-bottom -1rem
+    margin-top 3rem
   &:last-child
     justify-content center
     margin-left 3rem
+    margin-top -1rem
+    margin-bottom 3rem
 
 @media (max-width: 1950px)
   .backgroundText

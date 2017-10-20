@@ -13,8 +13,7 @@
         </div>
         <div class="textContainer">
           <p align="justify">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены.</p>
-          <p>Мой вам совет.</p>
-          <v-btn class="myBtnRed" v-scroll-to="'.ez'">Закажите платье сейчас</v-btn>
+          <span class="mr-3">Мой Вам совет:</span><v-btn class="myBtnRed" v-scroll-to="'.gallery'">Закажите платье сейчас</v-btn>
         </div>
       </v-flex>
     </v-layout>
@@ -52,7 +51,9 @@
       width 80%
       text-align center
       p
-        font-size 1.3rem
+      span
+        font-size 1.2rem
+        font-weight bold
 
 .OksanaInfo
   color #fff
