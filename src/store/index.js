@@ -70,8 +70,10 @@ export const store = new Vuex.Store({
       price: null,
       desc: ''
     },
+    sizes: ['XS', 'S', 'M', 'XL'],
     catalogDialog: false,
     sliderDialog: false,
+    detail: false,
   },
   mutations: {
     showCardSlider: state => {
@@ -85,6 +87,12 @@ export const store = new Vuex.Store({
     },
     closeCatalog: state => {
       state.catalogDialog = false
+    },
+    showDetails: state => {
+      state.detail = true
+    },
+    closeDetails: state => {
+      state.detail = false
     }
   }
 });

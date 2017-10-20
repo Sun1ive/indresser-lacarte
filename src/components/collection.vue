@@ -9,8 +9,8 @@
             <v-card-title>{{ item.title }}</v-card-title>
             <v-card-text>{{ item.price }} грн</v-card-text>
             <v-card-actions class="text-xs-center">
+              <v-btn class="redd" @click="showDetails(item)">Подробно</v-btn>
               <v-btn class="redd ml-2">Заказать</v-btn>
-              <v-btn class="redd">Подробно</v-btn>
             </v-card-actions>
           </div>
         </v-card>
@@ -41,6 +41,10 @@ import easy from './easy'
       test (item) {
         this.$store.state.currentItem = item
         this.$store.commit('showCardSlider')
+      },
+      showDetails (item) {
+        this.$store.state.currentItem = item
+        this.$store.commit('showDetails')
       }
     },
     computed: {
