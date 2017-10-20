@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-dialog v-model="dialog" max-width="400">
+    <v-dialog class="Dialog" v-model="dialog" max-width="400">
       <app-form></app-form>
     </v-dialog>
   </v-container>
@@ -20,6 +20,4 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
-
-</style>
+<style scoped lang="stylus"></style>

@@ -80,13 +80,11 @@ import easy from './easy'
     background #F3B020 center center repeat
     &__title
       justify-content center
-      font-weight bold
       text-transform uppercase
-      font-size 1.4rem
+      font-size 1.3rem
     &__text
       text-align center
-      font-weight bold
-      font-size 1.4rem
+      font-size 1.3rem
       padding 0
     &__actions
       justify-content center
