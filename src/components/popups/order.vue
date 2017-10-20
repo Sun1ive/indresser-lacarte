@@ -1,12 +1,12 @@
 <template>
   <v-dialog persistent max-width='400' v-model="order">
-    <v-form class="form">
+    <v-form class="Form">
       <v-text-field v-model="user.name" required label="Укажите Ваше имя"></v-text-field>
       <v-text-field v-model="user.phone" required label="Укажите Ваш телефон"></v-text-field>
       <v-text-field v-model="user.mail" label="Укажите Ваш email"></v-text-field>
       <v-select v-model="user.size" :items="sizes"></v-select>
-      <v-btn class="myBtn">Оформить</v-btn>
-      <v-btn class="myBtn" @click="closeOrder">Закрыть</v-btn>
+      <v-btn class="myBtnRed">Оформить</v-btn>
+      <v-btn class="myBtnRed" @click="closeOrder">Закрыть</v-btn>
     </v-form>
   </v-dialog>
 </template>

@@ -20,9 +20,4 @@
 </script>
 
 <style scoped lang="stylus">
-.Form
-  background-color #F3B020
-  padding 1.5rem 2rem
-  text-align center
-  opacity .7
 </style>
