@@ -10,7 +10,7 @@
             <v-card-text>{{ item.price }} грн</v-card-text>
             <v-card-actions class="text-xs-center">
               <v-btn class="redd" @click="showDetails(item)">Подробно</v-btn>
-              <v-btn class="redd ml-2">Заказать</v-btn>
+              <v-btn class="redd ml-2" @click="showOrder(item)">Заказать</v-btn>
             </v-card-actions>
           </div>
         </v-card>
@@ -45,6 +45,9 @@ import easy from './easy'
       showDetails (item) {
         this.$store.state.currentItem = item
         this.$store.commit('showDetails')
+      },
+      showOrder (item) {
+        this.$store.commit('showOrder')
       }
     },
     computed: {

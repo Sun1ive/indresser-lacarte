@@ -11,6 +11,7 @@
     <app-catalogModal></app-catalogModal>
     <app-collectionSlider></app-collectionSlider>
     <app-details></app-details>
+    <app-order></app-order>
   </v-app>
 </template>
 
@@ -21,6 +22,7 @@ import footer from './components/footer'
 import catalogModal from './components/popups/catalogmodal'
 import collectionSlider from './components/popups/collectionSlider'
 import details from './components/popups/details'
+import order from './components/popups/order'
 
   export default {
     components: {
@@ -29,7 +31,8 @@ import details from './components/popups/details'
       'app-footer': footer,
       'app-catalogModal': catalogModal,
       'app-collectionSlider': collectionSlider,
-      'app-details': details
+      'app-details': details,
+      'app-order': order
     },
     methods: {
 /*       fixed () {
