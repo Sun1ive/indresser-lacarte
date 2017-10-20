@@ -113,14 +113,18 @@ a
 .fixed
   position fixed
   top 0
+  opacity .7
   animation fade
   animation-duration 1s
+  transition .4s ease
+  &:hover
+    opacity 1
 
 @keyframes fade {
   from {
     opacity 0
   } to {
-    opacity 1
+    opacity .7
   }
 }
 </style>

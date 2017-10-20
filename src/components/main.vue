@@ -40,13 +40,13 @@
     <section class="request">
       <app-request></app-request>
     </section>
-    <!-- comments -->
-    <section class="comments">
-      <app-comments></app-comments>
-    </section>
     <!-- collection -->
     <section class="collection">
       <app-collection></app-collection>
+    </section>
+    <!-- comments -->
+    <section class="comments">
+      <app-comments></app-comments>
     </section>
     <!-- special offer -->
     <section class="special">

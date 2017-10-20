@@ -1,6 +1,6 @@
 <template>
-  <v-dialog v-model="sliderDialog" persistent max-width="400">
-    <v-card style="border-radius: 6px">
+  <v-dialog ref="dialog" v-model="sliderDialog" persistent max-width="85vh">
+    <v-card>
       <v-carousel hide-controls v-show="sliderDialog">
         <v-carousel-item v-for="(item, i) in slider" :key="i" :src="item" @click="closeSlider"></v-carousel-item>
       </v-carousel>
@@ -22,10 +22,16 @@
       closeSlider () {
         this.$store.commit('closeCardSlider')
       }
+    },
+    mounted () {
+      console.log(this.$refs.dialog.$refs.dialog);
+      let dialog = this.$refs.dialog.$refs.dialog
+      dialog.style.boxShadow = '0px 0px 5px 5px #c0c0c0'
     }
   }
 </script>
 
 <style scoped lang="stylus">
-
+.carousel
+  height 80vh
 </style>

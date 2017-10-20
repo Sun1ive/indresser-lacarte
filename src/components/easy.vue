@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="ez">
     <v-layout justify-center align-center>
       <div class="backgroundText my-5"><div>Получить свой заказ очень просто:</div></div>
     </v-layout>
