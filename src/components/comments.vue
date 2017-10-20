@@ -12,10 +12,8 @@
           </div>
         </div>
         <div class="textContainer">
-          <p class="text-xs-center">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены.</p>
-          <div class="fullwidth">
-            <span class="mr-3">Мой Вам совет:</span><v-btn class="myBtnRed" v-scroll-to="'.gallery'">Закажите платье сейчас</v-btn>
-          </div>
+          <p align="justify" class="text-xs-center">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены.</p>
+          <span class="mr-3">Мой Вам совет:</span><v-btn class="myBtnRed" v-scroll-to="'.gallery'">Закажите платье сейчас</v-btn>
         </div>
       </v-flex>
     </v-layout>
@@ -46,8 +44,8 @@
           width 100%
           border-radius 50%
     .textContainer
-      background-color #F3B020
-      box-shadow 0px 0px 5px 5px #F3B020
+      background-color rgba(#F3B020, .7)
+      box-shadow 0px 0px 5px 5px rgba(#F3B020, .7)
       padding 1rem
       margin 2rem 0
       width 80%
