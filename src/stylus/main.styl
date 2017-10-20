@@ -8,7 +8,7 @@
 
 
 //  variables
-$primary = #F5BA13
+$primary = #F3B020
 $red = rgba(255,0,0,.7)
 
 // styles
@@ -63,7 +63,7 @@ a
 .iconBackground
   width 120px
   height 120px
-  background-color #F5BA13
+  background-color $primary
   border-radius 50%
   position relative
   box-shadow 1px 1px 1px #333
@@ -80,6 +80,11 @@ a
   color #fff !important
   letter-spacing: 0.1rem
   font-weight: normal !important
+.myBtnRed
+  background-color $red !important
+  box-shadow: 0px 0px 5px 5px $red
+  color #fff !important
+  font-weight: normal !important  
 // using
 .border
   border 1px dashed #A7A7A7
