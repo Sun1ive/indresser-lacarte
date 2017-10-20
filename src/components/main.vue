@@ -28,10 +28,6 @@
     <section class="whatullget">
       <app-whatullget></app-whatullget>
     </section>
-    <!-- reviews -->
-    <section class="reviews">
-      <app-reviews></app-reviews>
-    </section>
     <!-- video -->
     <section class="video">
       <app-video></app-video>
@@ -63,7 +59,6 @@ import confidence from './confidence'
 import catalog from './catalog'
 import delivery from './delivery'
 import whatullget from './whatullget'
-import reviews from './reviews'
 import video from './video'
 import request from './request'
 import comments from './comments'
@@ -80,7 +75,6 @@ import special from './special'
       'app-catalog': catalog,
       'app-delivery': delivery,
       'app-whatullget': whatullget,
-      'app-reviews': reviews,
       'app-video': video,
       'app-request': request,
       'app-comments': comments,

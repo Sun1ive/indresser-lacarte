@@ -12,7 +12,6 @@ export const store = new Vuex.Store({
       { title: 'Catalog', icon: 'bookmark', scrollTo: '.catalog' },
       { title: 'Delivery', icon: 'star', scrollTo: '.deliver' },
       { title: 'What u ll get', icon: 'star', scrollTo: '.whatullget' },
-      { title: 'Reviews', icon: 'star', scrollTo: '.reviews' },
       { title: 'Video', icon: 'star', scrollTo: '.video' },
       { title: 'Request', icon: 'star', scrollTo: '.request' },
       { title: 'Comments', icon: 'star', scrollTo: '.comments' },
