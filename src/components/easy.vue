@@ -38,6 +38,7 @@
   flex-flow column wrap
   p
     font-size 1.3rem
+    font-weight bold
   img
     width 162px
     height 194px

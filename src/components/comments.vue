@@ -12,8 +12,10 @@
           </div>
         </div>
         <div class="textContainer">
-          <p align="justify">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены.</p>
-          <span class="mr-3">Мой Вам совет:</span><v-btn class="myBtnRed" v-scroll-to="'.gallery'">Закажите платье сейчас</v-btn>
+          <p class="text-xs-center">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены.</p>
+          <div class="fullwidth">
+            <span class="mr-3">Мой Вам совет:</span><v-btn class="myBtnRed" v-scroll-to="'.gallery'">Закажите платье сейчас</v-btn>
+          </div>
         </div>
       </v-flex>
     </v-layout>
@@ -49,17 +51,23 @@
       padding 1rem
       margin 2rem 0
       width 80%
-      text-align center
       p
       span
-        font-size 1.2rem
+        font-size 1.3rem
         font-weight bold
+
+.fullwidth
+  display flex
+  width 100%
+  align-items center
+  span
+    min-width 150px
+  .myBtnRed
+    width 100%
 
 .OksanaInfo
   color #fff
   font-size 2rem
-
-
 
 @media (max-width 620px)
   .flexed
@@ -67,4 +75,8 @@
       flex-direction column
       .avatar
         margin-left 0
+  .fullwidth
+    flex-direction column
+    align-items center
+    justify-content center
 </style>

@@ -61,7 +61,6 @@ import easy from './easy'
       position relative
       overflow hidden
       box-shadow 0px 0px 5px 2px rgba(#F3B020, .7)
-      z-index 123
 
 .redd
   background-color rgba(255,0,0, .9) !important

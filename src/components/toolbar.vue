@@ -117,6 +117,7 @@ a
   animation fade
   animation-duration 1s
   transition .4s ease
+  z-index 99
   &:hover
     opacity 1
 

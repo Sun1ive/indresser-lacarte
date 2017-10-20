@@ -33,8 +33,8 @@
       makeOrder () {
         this.user.item = this.$store.state.currentItem.title
         this.user.price = this.$store.state.currentItem.price
-        console.log(this.user);
         let order = `Товар: ${this.user.item} Размер:${this.user.size} Цена: ${this.user.price} грн`
+        console.log(this.user);
         console.log(order);
         console.log(`
         Имя: ${this.user.name}
