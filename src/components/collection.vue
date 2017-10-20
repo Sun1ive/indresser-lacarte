@@ -4,7 +4,7 @@
     <v-layout row wrap class="gallery">
       <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>
-          <v-card-media :src="item.img" height="500"></v-card-media>
+          <v-card-media :src="item.img" height="500" @click="test(item)"></v-card-media>
           <div class="wrapper">
             <v-card-title>{{ item.title }}</v-card-title>
             <v-card-text>{{ item.price }} грн</v-card-text>
@@ -35,6 +35,11 @@ import easy from './easy'
           { title: 'Наслаждайтесь покупкой', img: '/static/icons/5.png' },
           { title: 'Наслаждайтесь покупкой', img: '/static/icons/6.png' },
         ]
+      }
+    },
+    methods: {
+      test (item) {
+        console.log(item);
       }
     },
     computed: {

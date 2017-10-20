@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-dialog v-model="dialog">
+    <v-dialog v-model="dialog" max-width="400">
       <app-form></app-form>
     </v-dialog>
   </v-container>

@@ -23,7 +23,7 @@
           { one: 'Укажите', two: 'адресс доставки', img: '/static/icons/3.png' },
           { one: 'Получите', two: 'свой заказ', img: '/static/icons/4.png' },
           { one: 'Наслаждайтесь', two: 'покупкой', img: '/static/icons/5.png' },
-          { one: 'Наслаждайтесь', two: 'покупкой', img: '/static/icons/6.png' },
+          { one: 'Заказывайте', two: 'снова', img: '/static/icons/6.png' },
         ]
       }
     }
