@@ -63,15 +63,22 @@ export const store = new Vuex.Store({
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
     ],
-    fixed: false,
-    catalogDialog: false
+    currentItem: {
+      title: '',
+      img: '',
+      slider: ['','','',''],
+      price: null,
+      desc: ''
+    },
+    catalogDialog: false,
+    sliderDialog: false,
   },
   mutations: {
-    isFixed: state => {
-      state.fixed = true
+    showCardSlider: state => {
+      state.sliderDialog = true
     },
-    notFixed: state => {
-      state.fixed = false
+    closeCardSlider: state => {
+      state.sliderDialog = false
     },
     showCatalog: state => {
       state.catalogDialog = true

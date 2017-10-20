@@ -15,7 +15,8 @@ import {
   VForm,
   VParallax,
   VDivider,
-  VDialog
+  VDialog,
+  VCarousel
 } from 'vuetify'
 import Scroll from 'vue-scrollto'
 import { store } from './store'
@@ -48,7 +49,8 @@ Vue.use(Vuetify, {
     VForm,
     VParallax,
     VDivider,
-    VDialog
+    VDialog,
+    VCarousel
   }
 })
 

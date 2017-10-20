@@ -9,6 +9,7 @@
 
     <!-- modals -->
     <app-catalogModal></app-catalogModal>
+    <app-collectionSlider></app-collectionSlider>
   </v-app>
 </template>
 
@@ -17,17 +18,15 @@ import toolbar from './components/toolbar'
 import main from './components/main'
 import footer from './components/footer'
 import catalogModal from './components/popups/catalogmodal'
+import collectionSlider from './components/popups/collectionSlider'
 
   export default {
     components: {
       'app-toolbar': toolbar,
       'app-main': main,
       'app-footer': footer,
-      'app-catalogModal': catalogModal
-    },
-    data () {
-      return {
-      }
+      'app-catalogModal': catalogModal,
+      'app-collectionSlider': collectionSlider
     },
     methods: {
 /*       fixed () {

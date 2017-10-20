@@ -39,7 +39,8 @@ import easy from './easy'
     },
     methods: {
       test (item) {
-        console.log(item);
+        this.$store.state.currentItem = item
+        this.$store.commit('showCardSlider')
       }
     },
     computed: {

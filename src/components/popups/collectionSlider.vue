@@ -1,24 +1,28 @@
 <template>
-  <v-card style="border-radius: 6px">
-    <v-card-title class="popupTitle">{{ collectionItem.title }}<v-spacer></v-spacer>
-        <span class="valute">{{ collectionItem.price }} грн</span></v-card-title>
-      <v-card-text>
-        <v-layout>
-          <v-flex xs12 class="text-xs-left">
-            <p align="justify">{{collectionItem.desc }}</p>
-          </v-flex>
-        </v-layout>
-      </v-card-text>
-      <v-card-actions>
-        <v-btn style="border-radius: 6px;" @click.stop="showOrder(collectionItem)" class="redBtn ml-0">Оформить заказ</v-btn>
-        <v-btn style="border-radius: 6px;" @click.stop="popupData = false" class="white--text grey darken-4">Закрыть</v-btn>
-      </v-card-actions>
-  </v-card>
+  <v-dialog v-model="sliderDialog" persistent max-width="400">
+    <v-card style="border-radius: 6px">
+      <v-carousel hide-controls v-show="sliderDialog">
+        <v-carousel-item v-for="(item, i) in slider" :key="i" :src="item" @click="closeSlider"></v-carousel-item>
+      </v-carousel>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>
   export default {
-    
+    computed: {
+      sliderDialog () {
+        return this.$store.state.sliderDialog
+      },
+      slider () {
+        return this.$store.state.currentItem.slider
+      }
+    },
+    methods: {
+      closeSlider () {
+        this.$store.commit('closeCardSlider')
+      }
+    }
   }
 </script>
 
