@@ -27,14 +27,6 @@ import easy from './easy'
     },
     data () {
       return {
-        terms: [
-          { title: 'Выберите платье', img: '/static/icons/1.png' },
-          { title: 'Оставьте заявку', img: '/static/icons/2.png' },
-          { title: 'Укажите адресс доставки', img: '/static/icons/3.png' },
-          { title: 'Получите свой заказ', img: '/static/icons/4.png' },
-          { title: 'Наслаждайтесь покупкой', img: '/static/icons/5.png' },
-          { title: 'Наслаждайтесь покупкой', img: '/static/icons/6.png' },
-        ]
       }
     },
     methods: {
@@ -47,6 +39,7 @@ import easy from './easy'
         this.$store.commit('showDetails')
       },
       showOrder (item) {
+        this.$store.state.currentItem = item
         this.$store.commit('showOrder')
       }
     },
