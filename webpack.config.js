@@ -40,7 +40,7 @@ module.exports = {
         }
       },
       {
-        test: /\.styl$/,
+        test: /\.(styl|css)$/,
         loader: ['style-loader', 'css-loader', 'stylus-loader', {
           loader: 'vuetify-loader',
           options: {

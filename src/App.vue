@@ -12,6 +12,11 @@
     <app-collectionSlider></app-collectionSlider>
     <app-details></app-details>
     <app-order></app-order>
+
+    <!-- widgets -->
+    <app-phone v-if="isActivePhone"></app-phone>
+    <app-scrollTop></app-scrollTop>
+    <app-present></app-present>
   </v-app>
 </template>
 
@@ -23,6 +28,9 @@ import catalogModal from './components/popups/catalogmodal'
 import collectionSlider from './components/popups/collectionSlider'
 import details from './components/popups/details'
 import order from './components/popups/order'
+import phone from './components/widgets/phone'
+import scrollTop from './components/widgets/scrolltop'
+import present from './components/widgets/present'
 
   export default {
     components: {
@@ -32,23 +40,15 @@ import order from './components/popups/order'
       'app-catalogModal': catalogModal,
       'app-collectionSlider': collectionSlider,
       'app-details': details,
-      'app-order': order
+      'app-order': order,
+      'app-phone': phone,
+      'app-scrollTop': scrollTop,
+      'app-present': present
     },
-    methods: {
-/*       fixed () {
-        let offset = window.pageYOffset
-        if (offset >= 250 && this.$store.state.fixed === false) {
-          this.$store.commit('isFixed')
-        } else if (offset < 250 && this.$store.state.fixed === true) {
-          this.$store.commit('notFixed')
-        }
-      } */
-    },
-    created () {
-      // window.addEventListener('scroll', this.fixed)
-    },
-    beforeDestroy () {
-      // window.removeEventListener('scroll', this.fixed)
+    computed: {
+      isActivePhone () {
+        return this.$store.state.phoneWidget
+      }
     }
   }
 </script>

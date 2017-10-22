@@ -13,17 +13,20 @@
     },
     methods: {
       offerCall () {
+        alert('u have offered call')
+        // this.$store.commit('showCatalog')
+        // this.$store.commit('closePhoneWidget')
       }
     }
   }
 </script>
 
-<style scoped>
-@import url('./animations/animate.css');
+<style scoped lang='stylus'>
+@import url('./../animations/animate.css')
 
-#phone {
+#phone
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   right: 30px;
   width: 90px;
   height: 90px;
@@ -34,8 +37,8 @@
   border: 1px solid #333;
   cursor: pointer;
   animation: bounceIn 3s infinite linear both;
-}
-.icon {
+
+.icon
   background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/phone1-48.png');
   height: 64px;
   width: 64px;
@@ -44,5 +47,5 @@
   left: 50%;
   margin-top: -23px;
   margin-left: -23px;
-}
+
 </style>
