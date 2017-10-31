@@ -62,10 +62,4 @@ export default {
 
 
 
-
-// <v-layout row wrap justify-center align-end>
-//   <v-flex xs12 sm10 md5 lg3 class="something">Удобная одежда, которая одновременно пойдет для работы и для вечерних прогулок</v-flex>
-//   <v-flex xs12 sm10 md5 lg3 class="something">Одежда подобного уровня, не всегда есть в шоурумах и бутиках. Люблю ловить на себе взгляды ;)</v-flex>
-//   <v-flex xs12 sm10 md5 lg3 class="something">Данная одежда подчеркивает мою женственность и выполнена из качественных материалов</v-flex>
-// </v-layout>
 </style>
