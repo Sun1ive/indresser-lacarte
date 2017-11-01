@@ -30,6 +30,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d2bej1.jpg'
         ],
         price: 990,
+        order: 1,
         one: 'Фасон: платье трапеция с подрезами',
         two: 'Цвет: бежевый',
         three: 'Длина: выше колена',
@@ -47,6 +48,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d2blue1.jpg'
         ],
         price: 990,
+        order: 2,
         one: 'Фасон: платье трапеция с подрезами',
         two: 'Цвет: синий',
         three: 'Длина: мини',
@@ -64,6 +66,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d9_1.jpg'
         ],
         price: 990,
+        order: 3,
         one: 'Фасон: платье прямого силуэта',
         two: 'Цвет: синий, вставка - бежевый',
         three: 'Длина: до колена',
@@ -81,6 +84,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d18_black_bej1.jpg'
         ],
         price: 1090,
+        order: 4,
         one: 'Фасон: платье футляр полуприлегающего силуэта',
         two: 'Цвет: темно розовый, верх - светло розовый',
         three: 'Длина: ниже колена',
@@ -99,6 +103,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d19_black1.jpg'
         ],
         price: 890,
+        order: 5,
         one: 'Фасон: платье полуприлегающего силуэта',
         two: 'Цвет: черный',
         three: 'Длина: до колен',
@@ -117,6 +122,7 @@ export const store = new Vuex.Store({
           '/static/gallery/d20_bordo1.jpg'
         ],
         price: 990,
+        order: 6,
         one: 'Фасон: платье прямого силуэта с вертикальным воланом',
         two: 'Цвет: темно розовый',
         three: 'Длина: до колена',
