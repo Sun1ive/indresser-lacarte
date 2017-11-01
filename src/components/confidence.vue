@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-layout>
-      <v-flex xs12 class="conf">
+    <v-layout justify-center align-center>
+      <v-flex xs10 class="conf">
         <div class="backgroundText text-xs-center">
           <div>Почему наши киленты <span class="darken">уверены в inDresser</span></div>
         </div>

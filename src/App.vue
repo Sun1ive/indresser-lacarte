@@ -16,7 +16,7 @@
     <!-- widgets -->
     <!-- <app-phone v-if="isActivePhone"></app-phone> -->
     <app-scrollTop></app-scrollTop>
-    <app-present></app-present>
+    <!-- <app-present></app-present> -->
   </v-app>
 </template>
 

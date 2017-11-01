@@ -8,10 +8,9 @@
           </div>
           <div class="border"></div>
           <div class="text">Мы предоставим Вам перечень дизайнерской одежды</div>
-          <v-form class="form text-xs-right" action="/static/mail.php" method="POST">
-            <v-text-field required name="user_name" label="Укажите Ваше имя"></v-text-field>
-            <v-text-field required name="user_phone" label="Укажите Ваш телефон"></v-text-field>
-            <v-text-field required name="user_email" label="e-mail"></v-text-field>
+          <v-form class="form text-xs-right" @submit.prevent="submit">
+            <v-text-field required v-model="userData.name" label="Укажите Ваше имя"></v-text-field>
+            <v-text-field required v-model="userData.email" label="e-mail"></v-text-field>
             <v-btn type="submit" class="ml-0 myBtn">Получить каталог</v-btn>
           </v-form>
         </v-flex>
@@ -22,7 +21,34 @@
 
 <script>
   export default {
-    // some code
+    data () {
+      return {
+        userData: {
+          name: '',
+          email: ''
+        }
+      }
+    },
+    methods: {
+      submit () {
+        Email.send(
+        `coats@indresser.com`,
+        'sunliveua@gmail.com',
+        'Заказ каталога с сайта orange.indresser.com',
+        `Пользователь: ${this.userData.name}
+        Почта: ${this.userData.email}`,
+        'mail.adm.tools',
+        'coats@indresser.com',
+        '3DLao3x1AC8t');
+
+        alert(`Спасибо ${this.userData.name} за Ваш заказ, скоро мы свяжемся с Вами.`)
+
+        this.userData = {
+          name: '',
+          email: '',
+        }
+      }
+    }
   }
 </script>
 
