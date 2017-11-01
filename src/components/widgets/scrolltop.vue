@@ -11,8 +11,8 @@
         let offset = window.pageYOffset
         window.scrollTo(0,0)
       }
-    }
   }
+}
 </script>
 
 <style scoped lang="stylus">
@@ -21,7 +21,7 @@
   height 50px
   position fixed
   left 25px
-  bottom 50px
+  bottom 30px
   .icon
     font-size 6rem
     position absolute
