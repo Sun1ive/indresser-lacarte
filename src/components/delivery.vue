@@ -25,7 +25,17 @@
 .conf
   width 100%
   .black--text
-    width 30%
+    width 40%
+
+// @media (max-width 1500px)
+//   .conf
+//     .black--text
+//       width 60%
+
+
+// @media (max-width 900px)
+//   .black--text
+//     font-size 1.2rem
 
 @media (max-width: 600px)
   .conf

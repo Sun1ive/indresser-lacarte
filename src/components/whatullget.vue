@@ -17,31 +17,55 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       reviews: [
-        { img: '/static/review.png', text: 'Удобная одежда, которая одновременно пойдет для работы и для вечерних прогулок' },
-        { img: '/static/review.png', text: 'Одежда подобного уровня, не всегда есть в шоурумах и бутиках. Люблю ловить на себе взгляды ;)' },
-        { img: '/static/review.png', text: 'Данная одежда подчеркивает мою женственность и выполнена из качественных материалов' },
+        {
+          img: '/static/reviews/1.png',
+          text:
+            'Удобная одежда, которая одновременно пойдет для работы и для вечерних прогулок'
+        },
+        {
+          img: '/static/reviews/2.png',
+          text:
+            'Одежда подобного уровня, не всегда есть в шоурумах и бутиках. Люблю ловить на себе взгляды ;)'
+        },
+        {
+          img: '/static/reviews/3.png',
+          text:
+            'Данная одежда подчеркивает мою женственность и выполнена из качественных материалов'
+        }
       ]
-    }
+    };
   }
-}
-
+};
 </script>
 
 
 <style lang="stylus" scoped>
 .carousel
-  height 200px
-  max-width 700px
+  height: 200px
+  max-width: 700px
+  box-shadow: none
+
+.container
+  min-height 520px
+.carousel
+  height 300px
   box-shadow none
+  &__item
+    transition 1.1s linear
 
+@media (max-width 700px)
+  .container
+    min-height 400px
+  .carousel
+    height 200px
 
-
-
-
-
-
-
+@media (max-width: 470px)
+  .carousel
+    max-width 420px
+    height 185px
+    &__item
+      background-size contain
 </style>

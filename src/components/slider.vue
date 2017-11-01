@@ -31,7 +31,8 @@
 
 <style scoped lang="stylus">
 .container
-  background-color #F3AF20
+  // background-color #F3AF20
+  background-image url('/static/banner1.png')
   .layout
     min-height 150px
 

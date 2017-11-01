@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     menu: [
-      { title: 'Pains', icon: '3d_rotation', scrollTo: ".pains" },
+      { title: 'Pains', icon: '3d_rotation', scrollTo: '.pains' },
       { title: 'Slider', icon: 'autorenew', scrollTo: '.slider' },
       { title: 'Confidence', icon: 'alarm_on', scrollTo: '.confidence' },
       { title: 'Catalog', icon: 'bookmark', scrollTo: '.catalog' },
@@ -16,60 +16,95 @@ export const store = new Vuex.Store({
       { title: 'Request', icon: 'star', scrollTo: '.request' },
       { title: 'Comments', icon: 'star', scrollTo: '.comments' },
       { title: 'Collection', icon: 'star', scrollTo: '.collection' },
-      { title: 'Special', icon: 'star', scrollTo: '.special' },
+      { title: 'Special', icon: 'star', scrollTo: '.special' }
     ],
     collection: [
       {
         title: 'Платье трапеция',
         img: '/static/gallery/d2bej1.jpg',
-        slider: ['/static/gallery/d2bej2.jpg','/static/gallery/d2bej3.jpg','/static/gallery/d2bej4.jpg', '/static/gallery/d2bej1.jpg'],
+        slider: [
+          '/static/gallery/d2bej2.jpg',
+          '/static/gallery/d2bej3.jpg',
+          '/static/gallery/d2bej4.jpg',
+          '/static/gallery/d2bej1.jpg'
+        ],
         price: 990,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        desc: `Платье футляр с подрезами Фасон: приталенный силуэт Цвет: розовое Длина: на уровне колена Карманы: нет Рукав: крылышко Платье не на подкладке Состав: вискоза 45%, полиэстер 53%, спандекс 2%`
       },
       {
         title: 'Платье трапеция',
         img: '/static/gallery/d2blue1.jpg',
-        slider: ['/static/gallery/d2blue2.jpg','/static/gallery/d2blue3.jpg','/static/gallery/d2blue4.jpg','/static/gallery/d2blue1.jpg'],
+        slider: [
+          '/static/gallery/d2blue2.jpg',
+          '/static/gallery/d2blue3.jpg',
+          '/static/gallery/d2blue4.jpg',
+          '/static/gallery/d2blue1.jpg'
+        ],
         price: 990,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        desc:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
         title: 'Платье прямого силуэта',
         img: '/static/gallery/d9_1.jpg',
-        slider: ['/static/gallery/d9_2.jpg','/static/gallery/d9_3.jpg','/static/gallery/d9_4.jpg','/static/gallery/d9_1.jpg'],
+        slider: [
+          '/static/gallery/d9_2.jpg',
+          '/static/gallery/d9_3.jpg',
+          '/static/gallery/d9_4.jpg',
+          '/static/gallery/d9_1.jpg'
+        ],
         price: 990,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        desc:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
         title: 'Платье футляр',
         img: '/static/gallery/d18_black_bej1.jpg',
-        slider: ['/static/gallery/d18_black_bej2.jpg','/static/gallery/d18_black_bej3.jpg','/static/gallery/d18_black_bej4.jpg','/static/gallery/d18_black_bej1.jpg'],
+        slider: [
+          '/static/gallery/d18_black_bej2.jpg',
+          '/static/gallery/d18_black_bej3.jpg',
+          '/static/gallery/d18_black_bej4.jpg',
+          '/static/gallery/d18_black_bej1.jpg'
+        ],
         price: 1090,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        desc:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
         title: 'Платье полуприлегающего силуэта',
         img: '/static/gallery/d19_black1.jpg',
-        slider: ['/static/gallery/d19_black2.jpg','/static/gallery/d19_black3.jpg','/static/gallery/d19_black4.jpg','/static/gallery/d19_black1.jpg'],
+        slider: [
+          '/static/gallery/d19_black2.jpg',
+          '/static/gallery/d19_black3.jpg',
+          '/static/gallery/d19_black4.jpg',
+          '/static/gallery/d19_black1.jpg'
+        ],
         price: 890,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        desc:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
         title: 'Платье прямого силуэта',
         img: '/static/gallery/d20_bordo1.jpg',
-        slider: ['/static/gallery/d20_bordo2.jpg','/static/gallery/d20_bordo3.jpg','/static/gallery/d20_bordo4.jpg','/static/gallery/d20_bordo1.jpg'],
+        slider: [
+          '/static/gallery/d20_bordo2.jpg',
+          '/static/gallery/d20_bordo3.jpg',
+          '/static/gallery/d20_bordo4.jpg',
+          '/static/gallery/d20_bordo1.jpg'
+        ],
         price: 990,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
-      },
+        desc:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+      }
     ],
     currentItem: {
       title: '',
       img: '',
-      slider: ['','','',''],
+      slider: ['', '', '', ''],
       price: null,
       desc: ''
     },
-    sizes: ['XS', 'S', 'M', 'XL'],
+    sizes: ['XS', 'S', 'M', 'L'],
     catalogDialog: false,
     sliderDialog: false,
     detail: false,
@@ -78,34 +113,34 @@ export const store = new Vuex.Store({
   },
   mutations: {
     showCardSlider: state => {
-      state.sliderDialog = true
+      state.sliderDialog = true;
     },
     closeCardSlider: state => {
-      state.sliderDialog = false
+      state.sliderDialog = false;
     },
     showCatalog: state => {
-      state.catalogDialog = true
+      state.catalogDialog = true;
     },
     closeCatalog: state => {
-      state.catalogDialog = false
+      state.catalogDialog = false;
     },
     showDetails: state => {
-      state.detail = true
+      state.detail = true;
     },
     closeDetails: state => {
-      state.detail = false
+      state.detail = false;
     },
     showOrder: state => {
-      state.orderForm = true
+      state.orderForm = true;
     },
     closeOrder: state => {
-      state.orderForm = false
+      state.orderForm = false;
     },
     showPhoneWidget: state => {
-      state.phoneWidget = true
+      state.phoneWidget = true;
     },
     closePhoneWidget: state => {
-      state.phoneWidget = false
-    },
+      state.phoneWidget = false;
+    }
   }
 });

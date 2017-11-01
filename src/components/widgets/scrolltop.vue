@@ -1,5 +1,7 @@
 <template>
-  <div class="scrollTop" @click="scrollTop"></div>
+  <div class="scrollTop" @click="scrollTop">
+    <v-icon>keyboard_arrow_up</v-icon>
+  </div>
 </template>
 
 <script>
@@ -17,22 +19,15 @@
 .scrollTop
   width 50px
   height 50px
-  background-color #fff
   position fixed
-  left 10px
+  left 25px
   bottom 50px
-  border-radius 50%
-  border 1px solid rgba(0,0,0,.5)
-  cursor pointer
-  transition .4s ease all
-  &:hover
-    background-color #000
-    color #fff
-  &:after
+  .icon
+    font-size 6rem
     position absolute
-    content '\2B06'
     top 50%
     left 50%
-    font-size 2rem
-    transform translate(-50%,-50%)
+    transform translate(-50%, -50%)
+    cursor pointer
+    color #fff
 </style>

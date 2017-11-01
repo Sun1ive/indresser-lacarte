@@ -10,4 +10,10 @@
   background-size cover
   background-position center 60%
   min-height 600px
+
+@media (max-width 700px)
+  .banner
+    background-image url('/static/banner700.png')
+    min-height 300px
+  
 </style>

@@ -34,6 +34,8 @@
         <v-btn class="request hidden-sm-and-down" @click.stop="showForm">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
        <a class="hidden-xs-only" href="tel:380680202090">+38(068)0202090</a>
+       <v-spacer></v-spacer>
+       <a class="hidden-xs-only" href="tel:380980202092">+38(098)0202092</a>
       <v-spacer></v-spacer>
       <div class="text hidden-sm-and-down">Меню</div>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
