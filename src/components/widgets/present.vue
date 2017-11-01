@@ -8,7 +8,7 @@
   export default {
     methods: {
       subscribe () {
-        alert('u got present')
+        this.$store.commit('showPresent');
       }
     }
   }

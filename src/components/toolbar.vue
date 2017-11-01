@@ -27,7 +27,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar :fixed="isFixed">
-      <v-toolbar-title @click="scrollTop">
+      <v-toolbar-title>
         <img style="width: 100%" class="logo" src="/static/logo1.png" alt="logo">
       </v-toolbar-title>
       <v-spacer></v-spacer>

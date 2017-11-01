@@ -9,9 +9,8 @@
     <v-card-text>{{ currentItem.four }}</v-card-text>
     <v-card-text>{{ currentItem.five }}</v-card-text>
     <v-card-text>{{ currentItem.six }}</v-card-text>
-    <!-- <v-select v-model="size" single-line bottom :items="sizes" label="Выберите свой размер"></v-select> -->
     <v-card-actions class="pt-4">
-      <v-btn class="myBtnRed ml-0">Узнать наличие моего размера</v-btn>
+      <v-btn class="myBtnRed ml-0" @click.stop="showOrder">Узнать наличие моего размера</v-btn>
     </v-card-actions>
   </v-card>
 </v-dialog>
@@ -37,8 +36,12 @@
     },
     methods: {
       closeDetails () {
-        this.$store.commit('closeDetails')
+        this.$store.commit('closeDetails');
         this.size = null
+      },
+      showOrder () {
+        this.$store.commit('showOrder');
+        this.$store.commit('closeDetails');
       }
     }
   }

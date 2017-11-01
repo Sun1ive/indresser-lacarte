@@ -52,6 +52,15 @@ export default {
         '3DLao3x1AC8t'
       );
       alert(`Спасибо ${this.user.name} за Ваш заказ, скоро мы свяжемся с Вами.`);
+      this.user = {
+        name: '',
+        phone: '',
+        email: '',
+        size: null,
+        item: '',
+        price: '',
+        order: '',
+      }
       this.$store.commit('closeOrder');
     }
   },
