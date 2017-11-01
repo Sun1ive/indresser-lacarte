@@ -42,7 +42,7 @@
     </section>
     <!-- comments -->
     <section class="comments">
-      <app-comments></app-comments>
+      <!-- <app-comments></app-comments> -->
     </section>
     <!-- special offer -->
     <section class="special">

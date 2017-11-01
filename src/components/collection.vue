@@ -71,12 +71,13 @@ import easy from './easy'
 
 .gallery
   .card
-    // background url('/static/grunde.png') center center repeat
     background-color rgba(#F3B020, .7)
     &__title
       justify-content center
       text-transform uppercase
-      font-size 1.3rem
+      font-size 1rem
+      text-align center
+      padding 1rem
     &__text
       text-align center
       font-size 1.3rem

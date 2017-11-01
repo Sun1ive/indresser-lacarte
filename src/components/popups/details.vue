@@ -1,7 +1,7 @@
 <template>
 <v-dialog persistent v-model="details" lazy max-width="500">
   <v-card>
-    <v-card-actions><v-spacer></v-spacer><v-btn class="close" flat @click="closeDetails">x</v-btn></v-card-actions>
+    <div class="close" @click="closeDetails"></div>
     <v-card-title>{{ currentItem.title }} <v-spacer></v-spacer><span>{{ currentItem.price }} грн</span></v-card-title>
     <v-card-text>{{ currentItem.desc }}</v-card-text>
     <v-select v-model="size" single-line bottom :items="sizes" label="Выберите свой размер"></v-select>
@@ -45,6 +45,15 @@
     padding 1rem 2rem
     background-color #F3B020
     opacity .7
+    position relative
+    .close
+      background-image url('/static/close.svg')
+      width 30px
+      height 30px
+      position absolute
+      right 2%
+      top 2%
+      cursor pointer
     &__title
       text-transform uppercase
       font-weight bold

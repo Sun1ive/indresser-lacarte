@@ -9,8 +9,11 @@
 
     <!-- modals -->
     <app-catalogModal></app-catalogModal>
+
     <app-collectionSlider></app-collectionSlider>
+
     <app-details></app-details>
+
     <app-order></app-order>
 
     <!-- widgets -->
