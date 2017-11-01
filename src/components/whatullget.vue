@@ -6,24 +6,6 @@
           <div>Что говорят девушки, которые уже получили нашу одежду?</div>
         </div>
       </v-layout>
-<!--       <v-layout justify-center align-end>
-        <carousel-3d
-        :width="700"
-        :height="200"
-        autoplay
-        :autoplayTimeout="3000"
-        :autoplayHoverPause="true"
-        :disable3d="true"
-        controlsVisible
-        :border="0"
-        >
-          <slide :index="i" v-for="(item, i) in reviews" :key="i">
-            <div class="wrapper">
-              <img :src="item.img" :alt="i"><div>{{ item.text }}</div>
-            </div>
-          </slide>
-        </carousel-3d>
-      </v-layout> -->
       <v-layout justify-center align-center>
         <v-carousel hide-controls>
           <v-carousel-item v-for="(item, i) in reviews" :key="i" :src="item.img"></v-carousel-item>

@@ -19,8 +19,8 @@
   height 50px
   background-color #fff
   position fixed
-  left 30px
-  bottom 10px
+  left 10px
+  bottom 50px
   border-radius 50%
   border 1px solid rgba(0,0,0,.5)
   cursor pointer

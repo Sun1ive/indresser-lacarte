@@ -1,26 +1,30 @@
 <template>
   <v-container fluid>
     <v-layout row wrap justify-center align-center>
-      <div class="backgroundText">
-        <div>
-          <span class="darken">Знакомтесь</span> с новым брендом качественной одежды <span class="darken">inDresser</span>
+      <v-flex xs10>
+        <div class="backgroundText">
+          <div>
+            <span class="darken">Знакомтесь</span> с новым брендом качественной одежды <span class="darken">inDresser</span>
+          </div>
         </div>
-      </div>
+      </v-flex>
     </v-layout>
     <v-layout justify-center align-center class="carouselContainer">
-      <carousel-3d
-      autoplay
-      :autoplayTimeout="3000"
-      :autoplayHoverPause="true"
-      :width="450"
-      :height="600"
-      controlsVisible
-      :border="0"
-      >
-        <slide :index="i" v-for="(item, i) in collection" :key="i">
-          <img :src="item.img" :alt="item.title">
-        </slide>
-      </carousel-3d>
+      <v-flex xs12>
+        <carousel-3d
+        autoplay
+        :autoplayTimeout="3000"
+        :autoplayHoverPause="true"
+        :width="450"
+        :height="600"
+        controlsVisible
+        :border="0"
+        >
+          <slide :index="i" v-for="(item, i) in collection" :key="i">
+            <img :src="item.img" :alt="item.title">
+          </slide>
+        </carousel-3d>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -51,14 +55,18 @@
   margin 0
   background-color #F3AF20
   padding: 2rem 0
-  height: 650px !important
+  height: 650px
 
 .carousel-3d-slide
   border-radius 10px
   box-shadow 0 0 15px 4px #c9c9c9
 
+
+
 @media (max-width: 600px)
   .backgroundText
     text-align center
-
+    padding .1rem
+    div
+      font-size 1rem
 </style>
