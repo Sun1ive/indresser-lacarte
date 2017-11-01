@@ -16,6 +16,7 @@
         <v-card>
           <v-card-media :src="item.img" height="500" @click="test(item)"></v-card-media>
           <div class="wrapper">
+            <v-card-title>{{ item.name }}</v-card-title>
             <v-card-title>{{ item.title }}</v-card-title>
             <v-card-text>{{ item.price }} грн</v-card-text>
             <v-card-actions class="text-xs-center">
@@ -84,13 +85,13 @@ import easy from './easy'
     background-color rgba(#F3B020, .7)
     &__title
       justify-content center
-      text-transform uppercase
-      font-size 1rem
+      font-size 1.2rem
       text-align center
-      padding 1rem
+      padding 0.5rem
     &__text
       text-align center
       font-size 1.3rem
+      font-weight bold
       padding 0
     &__actions
       justify-content center

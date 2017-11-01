@@ -3,7 +3,12 @@
   <v-card>
     <div class="close" @click="closeDetails"></div>
     <v-card-title>{{ currentItem.title }} <v-spacer></v-spacer><span>{{ currentItem.price }} грн</span></v-card-title>
-    <v-card-text>{{ currentItem.desc }}</v-card-text>
+    <v-card-text>{{ currentItem.one }}</v-card-text>
+    <v-card-text>{{ currentItem.two }}</v-card-text>
+    <v-card-text>{{ currentItem.three }}</v-card-text>
+    <v-card-text>{{ currentItem.four }}</v-card-text>
+    <v-card-text>{{ currentItem.five }}</v-card-text>
+    <v-card-text>{{ currentItem.six }}</v-card-text>
     <v-select v-model="size" single-line bottom :items="sizes" label="Выберите свой размер"></v-select>
     <v-card-actions>
       <v-btn class="myBtnRed ml-0">Узнать наличие моего размера</v-btn>
@@ -61,7 +66,7 @@
       padding 1rem 0
     &__text
       font-size 1.3rem
-      padding 1rem 0
+      padding 0
     &__actions
       justify-content center
       .close

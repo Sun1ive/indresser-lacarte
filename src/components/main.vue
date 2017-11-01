@@ -41,9 +41,9 @@
       <app-collection></app-collection>
     </section>
     <!-- comments -->
-    <section class="comments">
+    <!-- <section class="comments"> -->
       <!-- <app-comments></app-comments> -->
-    </section>
+    <!-- </section> -->
     <!-- special offer -->
     <section class="special">
       <app-special></app-special>

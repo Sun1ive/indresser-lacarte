@@ -14,13 +14,14 @@ export const store = new Vuex.Store({
       { title: 'What u ll get', icon: 'star', scrollTo: '.whatullget' },
       { title: 'Video', icon: 'star', scrollTo: '.video' },
       { title: 'Request', icon: 'star', scrollTo: '.request' },
-      { title: 'Comments', icon: 'star', scrollTo: '.comments' },
+      // { title: 'Comments', icon: 'star', scrollTo: '.comments' },
       { title: 'Collection', icon: 'star', scrollTo: '.collection' },
       { title: 'Special', icon: 'star', scrollTo: '.special' }
     ],
     collection: [
       {
-        title: 'Платье трапеция',
+        name: 'Платье',
+        title: 'трапеция',
         img: '/static/gallery/d2bej1.jpg',
         slider: [
           '/static/gallery/d2bej2.jpg',
@@ -29,10 +30,22 @@ export const store = new Vuex.Store({
           '/static/gallery/d2bej1.jpg'
         ],
         price: 990,
-        desc: `Платье футляр с подрезами Фасон: приталенный силуэт Цвет: розовое Длина: на уровне колена Карманы: нет Рукав: крылышко Платье не на подкладке Состав: вискоза 45%, полиэстер 53%, спандекс 2%`
+        // desc: `Платье футляр с подрезами Фасон: приталенный силуэт Цвет: розовое Длина: на уровне колена Карманы: нет Рукав: крылышко Платье не на подкладке Состав: вискоза 45%, полиэстер 53%, спандекс 2%`,
+        one: 'Фасон: приталенный силуэт',
+        two: 'Цвет: розовое',
+        three: 'Длина: на уровне колена',
+        four: 'Карманы: нет',
+        five: 'Рукав: крылышко',
+        six: 'Платье не на подкладке',
+        comp: {
+          one: 'вискоза 45%',
+          two: 'вискоза 66%',
+          three: 'вискоза 415%',
+        }
       },
       {
-        title: 'Платье трапеция',
+        name: 'Платье',
+        title: 'трапеция',
         img: '/static/gallery/d2blue1.jpg',
         slider: [
           '/static/gallery/d2blue2.jpg',
@@ -45,7 +58,8 @@ export const store = new Vuex.Store({
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
-        title: 'Платье прямого силуэта',
+        name: 'Платье',
+        title: 'прямого силуэта',
         img: '/static/gallery/d9_1.jpg',
         slider: [
           '/static/gallery/d9_2.jpg',
@@ -58,7 +72,8 @@ export const store = new Vuex.Store({
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
-        title: 'Платье футляр',
+        name: 'Платье',
+        title: 'футляр',
         img: '/static/gallery/d18_black_bej1.jpg',
         slider: [
           '/static/gallery/d18_black_bej2.jpg',
@@ -71,7 +86,8 @@ export const store = new Vuex.Store({
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
-        title: 'Платье полуприлегающего силуэта',
+        name: 'Платье',
+        title: 'полуприлегающего силуэта',
         img: '/static/gallery/d19_black1.jpg',
         slider: [
           '/static/gallery/d19_black2.jpg',
@@ -84,7 +100,8 @@ export const store = new Vuex.Store({
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
       },
       {
-        title: 'Платье прямого силуэта',
+        name: 'Платье',
+        title: 'прямого силуэта',
         img: '/static/gallery/d20_bordo1.jpg',
         slider: [
           '/static/gallery/d20_bordo2.jpg',
