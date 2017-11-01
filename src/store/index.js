@@ -30,18 +30,11 @@ export const store = new Vuex.Store({
           '/static/gallery/d2bej1.jpg'
         ],
         price: 990,
-        // desc: `Платье футляр с подрезами Фасон: приталенный силуэт Цвет: розовое Длина: на уровне колена Карманы: нет Рукав: крылышко Платье не на подкладке Состав: вискоза 45%, полиэстер 53%, спандекс 2%`,
-        one: 'Фасон: приталенный силуэт',
-        two: 'Цвет: розовое',
-        three: 'Длина: на уровне колена',
-        four: 'Карманы: нет',
-        five: 'Рукав: крылышко',
-        six: 'Платье не на подкладке',
-        comp: {
-          one: 'вискоза 45%',
-          two: 'вискоза 66%',
-          three: 'вискоза 415%',
-        }
+        one: 'Фасон: платье трапеция с подрезами',
+        two: 'Цвет: бежевый',
+        three: 'Длина: выше колена',
+        four: 'Карманы: в боковых швах',
+        six: 'Платье на подкладке',
       },
       {
         name: 'Платье',
@@ -54,8 +47,11 @@ export const store = new Vuex.Store({
           '/static/gallery/d2blue1.jpg'
         ],
         price: 990,
-        desc:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        one: 'Фасон: платье трапеция с подрезами',
+        two: 'Цвет: синий',
+        three: 'Длина: мини',
+        four: 'Карманы: в боковых швах',
+        six: 'Платье на подкладке',
       },
       {
         name: 'Платье',
@@ -68,8 +64,11 @@ export const store = new Vuex.Store({
           '/static/gallery/d9_1.jpg'
         ],
         price: 990,
-        desc:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        one: 'Фасон: платье прямого силуэта',
+        two: 'Цвет: синий, вставка - бежевый',
+        three: 'Длина: до колена',
+        four: 'Карманы: есть',
+        six: 'Платье без подкладки',
       },
       {
         name: 'Платье',
@@ -82,8 +81,12 @@ export const store = new Vuex.Store({
           '/static/gallery/d18_black_bej1.jpg'
         ],
         price: 1090,
-        desc:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        one: 'Фасон: платье футляр полуприлегающего силуэта',
+        two: 'Цвет: темно розовый, верх - светло розовый',
+        three: 'Длина: ниже колена',
+        four: 'Карманы: есть',
+        five: 'Особенности: Кокетка по полочке и спине. Со шлицей',
+        six: 'Платье без подкладки',
       },
       {
         name: 'Платье',
@@ -96,8 +99,12 @@ export const store = new Vuex.Store({
           '/static/gallery/d19_black1.jpg'
         ],
         price: 890,
-        desc:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        one: 'Фасон: платье полуприлегающего силуэта',
+        two: 'Цвет: черный',
+        three: 'Длина: до колен',
+        four: 'Карманы: нет',
+        five: 'Особенности: по спинке молния',
+        six: 'Платье без подкладки',
       },
       {
         name: 'Платье',
@@ -110,8 +117,11 @@ export const store = new Vuex.Store({
           '/static/gallery/d20_bordo1.jpg'
         ],
         price: 990,
-        desc:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremque, facilis similique tempora. Est tenetur culpa, ad laboru'
+        one: 'Фасон: платье прямого силуэта с вертикальным воланом',
+        two: 'Цвет: темно розовый',
+        three: 'Длина: до колена',
+        four: 'Карманы: есть',
+        six: 'Платье  без подкладки',
       }
     ],
     currentItem: {

@@ -42,7 +42,6 @@ import present from './components/widgets/present'
       'app-collectionSlider': collectionSlider,
       'app-details': details,
       'app-order': order,
-      // 'app-phone': phone,
       'app-scrollTop': scrollTop,
       'app-present': present
     },

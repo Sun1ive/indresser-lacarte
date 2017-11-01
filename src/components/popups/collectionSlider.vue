@@ -24,7 +24,7 @@
       }
     },
     mounted () {
-      console.log(this.$refs.dialog.$refs.dialog);
+      // console.log(this.$refs.dialog.$refs.dialog);
       let dialog = this.$refs.dialog.$refs.dialog
       dialog.style.boxShadow = '0px 0px 5px 5px #c0c0c0'
     }

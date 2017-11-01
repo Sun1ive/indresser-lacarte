@@ -9,8 +9,8 @@
     <v-card-text>{{ currentItem.four }}</v-card-text>
     <v-card-text>{{ currentItem.five }}</v-card-text>
     <v-card-text>{{ currentItem.six }}</v-card-text>
-    <v-select v-model="size" single-line bottom :items="sizes" label="Выберите свой размер"></v-select>
-    <v-card-actions>
+    <!-- <v-select v-model="size" single-line bottom :items="sizes" label="Выберите свой размер"></v-select> -->
+    <v-card-actions class="pt-4">
       <v-btn class="myBtnRed ml-0">Узнать наличие моего размера</v-btn>
     </v-card-actions>
   </v-card>
@@ -67,9 +67,14 @@
     &__text
       font-size 1.3rem
       padding 0
-    &__actions
-      justify-content center
-      .close
-        margin-right -1rem
-        margin-top -1rem
+
+@media (max-width 420px)
+  .myBtnRed
+    font-size .8rem
+    text-transform auto
+  .dialog
+    .card__title
+      font-size 1.2rem
+    .card__text
+      font-size 1rem
 </style>

@@ -6,5 +6,5 @@
 
 <style scoped lang="stylus">
 iframe
-  min-height 100vh
+  min-height 80vh
 </style>

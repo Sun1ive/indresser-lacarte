@@ -10,39 +10,41 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        userData: {
-          name: '',
-          email: ''
-        }
+export default {
+  data() {
+    return {
+      userData: {
+        name: '',
+        email: ''
       }
-    },
-    methods: {
-    submit () {
+    };
+  },
+  methods: {
+    submit() {
       Email.send(
-      `coats@indresser.com`,
-      'sunliveua@gmail.com',
-      'Заказ каталога с сайта orange.indresser.com',
-      `Пользователь: ${this.userData.name}
-      Почта: ${this.userData.email}`,
-      'mail.adm.tools',
-      'coats@indresser.com',
-      '3DLao3x1AC8t');
+        `coats@indresser.com`,
+        'sunliveua@gmail.com',
+        'Заказ каталога с сайта orange.indresser.com',
+        `Пользователь: ${this.userData.name}
+        Почта: ${this.userData.email}`,
+        'mail.adm.tools',
+        'coats@indresser.com',
+        '3DLao3x1AC8t'
+      );
 
-      alert(`Спасибо ${this.userData.name} за Ваш заказ, скоро мы свяжемся с Вами.`)
+      alert(`Спасибо ${this.userData.name} за Ваш заказ, скоро мы свяжемся с Вами.`);
 
       this.userData = {
         name: '',
-        email: '',
-      }
+        email: ''
+      };
+      this.$store.commit('closeCatalog');
     },
-    closeForm () {
-      this.$store.commit('closeCatalog')
+    closeForm() {
+      this.$store.commit('closeCatalog');
     }
   }
-}
+};
 </script>
 
 <style scoped lang="stylus">

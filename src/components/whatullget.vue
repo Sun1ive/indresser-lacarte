@@ -47,6 +47,9 @@ export default {
   height: 200px
   max-width: 700px
   box-shadow: none
+  background-color rgba(#fff, .6)
+  border-radius 8px
+  box-shadow 0px 0px 15px 1px #fff !important
 
 .container
   min-height 520px
@@ -65,7 +68,7 @@ export default {
 @media (max-width: 470px)
   .carousel
     max-width 420px
-    height 185px
+    height 140px
     &__item
       background-size contain
 </style>

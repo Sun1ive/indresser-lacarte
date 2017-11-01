@@ -61,11 +61,9 @@
         if (offset >= 250 && !toolbar.classList.contains('fixed')) {
           toolbar.classList.remove('notFixed')
           toolbar.classList.add('fixed')
-          console.log('123');
         } else if (offset <= 250 && toolbar.classList.contains('fixed')) {
           toolbar.classList.remove('fixed')
           toolbar.classList.add('notFixed')
-          console.log('234');
         }
       },
       showForm () {
@@ -115,7 +113,7 @@ a
 .fixed
   position fixed
   top 0
-  opacity .7
+  opacity .1
   animation fade
   animation-duration 1s
   transition .4s ease
