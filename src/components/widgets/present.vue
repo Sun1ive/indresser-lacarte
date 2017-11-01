@@ -21,7 +21,7 @@
   position: fixed;
   width: 90px;
   height: 90px;
-  bottom: 100px;
+  bottom: 10px;
   right: 30px;
   border-radius: 50%;
   cursor: pointer;
@@ -31,12 +31,12 @@
 
 .icon
   position: absolute;
-  background-image: url('/static/gift.png')
   width: 64px;
   height: 64px;
-  top: 50%;
-  left: 50%;
-  margin-top: -32px;
-  margin-left: -31px;
+  background-image: url('/static/gift.svg')
+  background-size cover
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
 
 </style>

@@ -16,9 +16,11 @@
 
     <app-order></app-order>
 
+    <app-presentForm></app-presentForm>
+
     <!-- widgets -->
     <app-scrollTop></app-scrollTop>
-    <!-- <app-present></app-present> -->
+    <app-present></app-present>
   </v-app>
 </template>
 
@@ -32,6 +34,7 @@ import details from './components/popups/details'
 import order from './components/popups/order'
 import scrollTop from './components/widgets/scrolltop'
 import present from './components/widgets/present'
+import presentForm from './components/popups/present'
 
   export default {
     components: {
@@ -43,7 +46,8 @@ import present from './components/widgets/present'
       'app-details': details,
       'app-order': order,
       'app-scrollTop': scrollTop,
-      'app-present': present
+      'app-present': present,
+      'app-presentForm': presentForm,
     },
     computed: {
       isActivePhone () {

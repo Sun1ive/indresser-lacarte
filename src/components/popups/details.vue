@@ -1,5 +1,5 @@
 <template>
-<v-dialog persistent v-model="details" lazy max-width="500">
+<v-dialog persistent v-model="details" lazy max-width="600">
   <v-card>
     <div class="close" @click="closeDetails"></div>
     <v-card-title>{{ currentItem.title }} <v-spacer></v-spacer><span>{{ currentItem.price }} грн</span></v-card-title>
@@ -46,8 +46,9 @@
 
 <style scoped lang="stylus">
 .dialog
+  text-align center
   .card
-    padding 1rem 2rem
+    padding 2rem
     background-color #F3B020
     opacity .7
     position relative
@@ -57,7 +58,7 @@
       height 30px
       position absolute
       right 2%
-      top 2%
+      top 3%
       cursor pointer
     &__title
       text-transform uppercase

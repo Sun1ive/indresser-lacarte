@@ -125,7 +125,7 @@ a
   from {
     opacity 0
   } to {
-    opacity .7
+    opacity .1
   }
 }
 </style>

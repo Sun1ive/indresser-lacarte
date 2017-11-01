@@ -11,7 +11,7 @@
     </v-layout>
     <v-layout justify-center align-center class="carouselContainer">
       <v-flex xs10 sm8 md7 lg6>
-        <v-carousel>
+        <v-carousel hide-controls>
           <v-carousel-item v-for="(item,i) in collection" :src="item.img" :key="i"></v-carousel-item>
         </v-carousel>
       </v-flex>

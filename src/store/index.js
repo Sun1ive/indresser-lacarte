@@ -14,7 +14,6 @@ export const store = new Vuex.Store({
       { title: 'What u ll get', icon: 'star', scrollTo: '.whatullget' },
       { title: 'Video', icon: 'star', scrollTo: '.video' },
       { title: 'Request', icon: 'star', scrollTo: '.request' },
-      // { title: 'Comments', icon: 'star', scrollTo: '.comments' },
       { title: 'Collection', icon: 'star', scrollTo: '.collection' },
       { title: 'Special', icon: 'star', scrollTo: '.special' }
     ],
@@ -142,7 +141,7 @@ export const store = new Vuex.Store({
     sliderDialog: false,
     detail: false,
     orderForm: false,
-    phoneWidget: true
+    presentForm: false,
   },
   mutations: {
     showCardSlider: state => {
@@ -169,11 +168,11 @@ export const store = new Vuex.Store({
     closeOrder: state => {
       state.orderForm = false;
     },
-    showPhoneWidget: state => {
-      state.phoneWidget = true;
+    showPresent: state => {
+      state.presentForm = true;
     },
-    closePhoneWidget: state => {
-      state.phoneWidget = false;
-    }
+    closePresent: state => {
+      state.presentForm = false;
+    },
   }
 });

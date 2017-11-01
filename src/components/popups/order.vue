@@ -35,11 +35,11 @@ export default {
       this.user.item = this.$store.state.currentItem.title;
       this.user.price = this.$store.state.currentItem.price;
       this.user.order = this.$store.state.currentItem.order;
-      let order = `Имя: ${this.user.name}
-      Телефон: ${this.user.phone}
-      Почта: ${this.user.email}
-      заказал товар: ${this.user.item} ${this.user.order},
-      Размер:${this.user.size}
+      let order = `Имя: ${this.user.name}, 
+      Телефон: ${this.user.phone}, 
+      Почта: ${this.user.email}, 
+      Заказал товар: ${this.user.item} ${this.user.order}, 
+      Размер: ${this.user.size}, 
       Цена: ${this.user.price} грн`;
 
       Email.send(
