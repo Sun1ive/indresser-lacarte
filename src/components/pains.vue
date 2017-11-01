@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pain">
     <v-layout align-center justify-center class="pt-3">
-      <v-flex xs12 sm11 md10 class="flexBox">
+      <v-flex xs10 sm10 md10 class="flexBox">
         <div class="iconBackground">
           <img class="imgIcon" src="/static/girl.png" alt="girlicon">
         </div>
@@ -13,7 +13,7 @@
       </v-flex>
     </v-layout>
     <v-layout justify-end align-center class="pt-3">
-      <v-flex xs12 sm11 md10 class="flexBox">
+      <v-flex xs10 sm10 md10 class="flexBox">
         <div class="iconBackground">
           <img class="imgIcon two" src="/static/money.png" alt="money">
         </div>
