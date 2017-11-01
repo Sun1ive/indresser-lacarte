@@ -17,7 +17,6 @@
     <app-order></app-order>
 
     <!-- widgets -->
-    <!-- <app-phone v-if="isActivePhone"></app-phone> -->
     <app-scrollTop></app-scrollTop>
     <!-- <app-present></app-present> -->
   </v-app>
@@ -31,7 +30,6 @@ import catalogModal from './components/popups/catalogmodal'
 import collectionSlider from './components/popups/collectionSlider'
 import details from './components/popups/details'
 import order from './components/popups/order'
-// import phone from './components/widgets/phone'
 import scrollTop from './components/widgets/scrolltop'
 import present from './components/widgets/present'
 

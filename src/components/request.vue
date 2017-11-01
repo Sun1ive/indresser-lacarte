@@ -7,7 +7,7 @@
     </v-layout>
     <v-parallax src="/static/collectionBanner.png" height="800">
       <v-layout class="mt-5" align-center>
-        <v-flex xs10>
+        <v-flex xs10 sm6 lg3>
           <div class="backgroundText text-xs-center">
             <div>Эту коллекцию очень быстро разбирают</div>
           </div>
