@@ -1,10 +1,13 @@
 <template>
-  <v-container fluid>
-    <v-parallax src="/static/banner.png" height="600"></v-parallax>
+  <v-container fluid class="banner">
   </v-container>
 </template>
 
 <style scoped lang="stylus">
-.container
+.banner
   padding 0
+  background-image url('/static/banner.png')
+  background-size cover
+  background-position center 60%
+  min-height 600px
 </style>

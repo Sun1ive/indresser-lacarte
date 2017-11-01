@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid>
-    <v-layout column align-center justify-center>
-      <v-flex xs11 class="flexContainer text-xs-center">
+  <v-container fluid class="pain">
+    <v-layout align-center justify-center class="pt-3">
+      <v-flex xs12 sm11 md10 class="flexBox">
         <div class="iconBackground">
           <img class="imgIcon" src="/static/girl.png" alt="girlicon">
         </div>
@@ -11,7 +11,9 @@
           </div>
         </div>
       </v-flex>
-      <v-flex xs11 align-center class="flexContainer text-xs-center">
+    </v-layout>
+    <v-layout justify-end align-center class="pt-3">
+      <v-flex xs12 sm11 md10 class="flexBox">
         <div class="iconBackground">
           <img class="imgIcon two" src="/static/money.png" alt="money">
         </div>
@@ -26,34 +28,40 @@
 </template>
 
 <style scoped lang="stylus">
-.imgIcon
-  position absolute
-  top -15%
-  right -25%
-  max-width 100px
-  max-height 150px
-  width 100%
+.pain
+  min-height 400px
+  .layout
+    min-height 200px
+  .flexBox
+    display flex
+    align-items center
+    .backgroundText
+      margin-left 3rem
+  .imgIcon
+    position absolute
+    top -15%
+    right -25%
+    max-width 100px
+    max-height 150px
+    width 100%
 
-.two
-  top 0
-  max-width 150px
-  max-height 200px
+@media (max-width 1300px)
+  .pain
+    .layout
+      justify-content center
 
-.backgroundText
-  margin-left 6rem
-  width 100%
-
-.flexContainer
-  width 100%
-  display flex
-  justify-content flex-start
-  &:first-child
-    margin-left 3rem
-    margin-bottom -1rem
-    margin-top 3rem
-  &:last-child
-    justify-content center
-    margin-left 3rem
-    margin-top -1rem
-    margin-bottom 3rem
+@media (max-width 700px)
+  .pain
+    .flexBox
+      flex-direction column
+      margin 1rem 0
+      .backgroundText
+        margin-left 0
+        margin-top 2rem
+        div
+          font-size 1rem
+          text-align center
+    .imgIcon
+      min-width 70px
+      min-height 130px
 </style>
