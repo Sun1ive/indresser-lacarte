@@ -1,10 +1,5 @@
 <template>
   <v-container fluid>
-    <v-layout justify-center>
-      <v-flex xs10>
-        <app-border></app-border>
-      </v-flex>
-    </v-layout>
     <v-parallax src="/static/collectionBanner.png" height="800">
       <v-layout class="mt-5" align-center>
         <v-flex xs10 sm6 lg3>
@@ -76,9 +71,6 @@ export default {
 <style scoped lang="stylus">
 .border
   margin 2rem 0
-
-.container
-  margin-top -1rem
 
 @media (max-width: 600px)
   .backgroundText

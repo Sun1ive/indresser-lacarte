@@ -7,7 +7,7 @@
             <div>Узнайте о специальном предложении</div>
           </div>
           <div class="border"></div>
-          <div class="text"><span>Мы доставим Ваш заказ Вам в офис или по месту проживания</span></div>
+          <div class="text"><span>Мы бесплатно доставим заказ в Ваш офис или по месту проживания. При этом первым 100 клиентам дополнительная скидка 100грн</span></div>
           <v-form class="form text-xs-right" @submit.prevent="submit">
             <v-text-field required v-model="userData.name" label="Укажите Ваше имя"></v-text-field>
             <v-text-field required v-model="userData.email" label="e-mail"></v-text-field>

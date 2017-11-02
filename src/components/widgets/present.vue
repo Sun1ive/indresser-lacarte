@@ -35,8 +35,8 @@
   position: fixed;
   width: 90px;
   height: 90px;
-  bottom: 10px;
-  right: 30px;
+  bottom: 15%;
+  left: 8px;
   border-radius: 50%;
   cursor: pointer;
   animation: fadeOut 5s infinite linear both

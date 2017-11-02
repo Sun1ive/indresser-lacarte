@@ -99,6 +99,7 @@ a
 
 .text
   font-size 1.3rem
+  color #fff
 
 .btn--icon
   width 48px

@@ -1,16 +1,16 @@
 <template>
   <v-container fluid grid-list-lg>
     <easy></easy>
-    <v-layout justify-center class="py-3">
+    <v-layout justify-center class="py-5">
       <div class="backgroundText">
-        <div>Самые популярные модели</div>
+        <div>Топ продаж. Выебри свое платье</div>
       </div>
     </v-layout>
-    <v-layout justify-center class="py-3">
+    <!-- <v-layout justify-center class="py-3">
       <div class="backgroundText">
         <div>Выбери свое платье</div>
       </div>
-    </v-layout>
+    </v-layout> -->
     <v-layout row wrap class="gallery">
       <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>
@@ -96,4 +96,6 @@ import easy from './easy'
     &__actions
       justify-content center
       text-align center
+    &__media
+      cursor pointer
 </style>
