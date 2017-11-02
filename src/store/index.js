@@ -143,7 +143,7 @@ export const store = new Vuex.Store({
     detail: false,
     orderForm: false,
     presentForm: false,
-    present: true,
+    present: false,
   },
   mutations: {
     showCardSlider: state => {

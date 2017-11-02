@@ -50,10 +50,7 @@
     .layout
       justify-content center
 
-// @media (max-width 1100px)
-  
-
-@media (max-width 700px)
+@media (max-width 1100px)
   .pain
     .flexBox
       flex-direction column
@@ -64,6 +61,9 @@
         div
           font-size 1rem
           text-align center
+
+@media (max-width 700px)
+  .pain
     .imgIcon
       min-width 70px
       min-height 130px

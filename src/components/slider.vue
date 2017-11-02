@@ -44,6 +44,7 @@
     max-height 600px
     width 100%
     margin 0 auto
+    box-shadow 0px 0px 5px 5px #CBCBCD
 
 .carousel__item
   transition 1s ease-in-out

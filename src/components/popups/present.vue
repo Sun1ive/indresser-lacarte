@@ -26,7 +26,7 @@ export default {
     submit() {
       Email.send(
         `coats@indresser.com`,
-        'vi290983mal@gmail.com',
+        'info@indresser.com',
         'Заказ на получение скидки с сайта manydresses.indresser.com',
         `Пользователь: ${this.userData.name}, 
         Телефон: ${this.userData.phone}, 
