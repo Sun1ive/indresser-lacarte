@@ -1,7 +1,11 @@
 <template>
   <v-container class="ez">
     <v-layout justify-center align-center>
-      <div class="backgroundText my-5"><div>Получить свой заказ очень просто:</div></div>
+      <div class="backgroundText my-5">
+        <div>
+          <span class="darken">Получить свой заказ</span> очень <span class="darken">просто:</span>
+        </div>
+      </div>
     </v-layout>
     <v-layout row wrap justify-center align-center>
       <v-flex class="cont text-xs-center" xs12 sm6 md4 lg2 v-for="(item,i) in terms" :key="i">

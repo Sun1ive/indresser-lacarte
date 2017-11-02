@@ -50,6 +50,9 @@
     .layout
       justify-content center
 
+// @media (max-width 1100px)
+  
+
 @media (max-width 700px)
   .pain
     .flexBox

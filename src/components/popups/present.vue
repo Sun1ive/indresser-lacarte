@@ -68,4 +68,13 @@ export default {
     color: #fff;
   }
 }
+
+@media (max-width 400px)
+  .Form
+    flex-direction column
+    align-items center
+    button
+      width 100%
+      margin-left 0
+      margin-top 1rem
 </style>

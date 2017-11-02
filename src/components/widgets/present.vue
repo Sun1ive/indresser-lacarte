@@ -35,11 +35,11 @@
   position: fixed;
   width: 90px;
   height: 90px;
-  bottom: 15%;
-  left: 8px;
+  bottom: 8%;
+  left: 5px;
   border-radius: 50%;
   cursor: pointer;
-  animation: fadeOut 5s infinite linear both
+  animation: fadeOut 3s infinite linear both alternate
   &:hover
     animation none
 

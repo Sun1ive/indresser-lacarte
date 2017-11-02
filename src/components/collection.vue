@@ -3,14 +3,9 @@
     <easy></easy>
     <v-layout justify-center class="py-5">
       <div class="backgroundText">
-        <div>Топ продаж. Выебри свое платье</div>
+        <div>Самые популярные заказы. <span class="darken">Выбери себе платье.</span></div>
       </div>
     </v-layout>
-    <!-- <v-layout justify-center class="py-3">
-      <div class="backgroundText">
-        <div>Выбери свое платье</div>
-      </div>
-    </v-layout> -->
     <v-layout row wrap class="gallery">
       <v-flex xs12 sm6 md4 lg2 v-for="(item, i) in collection" :key="i">
         <v-card>

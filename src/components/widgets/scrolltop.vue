@@ -29,5 +29,5 @@
     left 50%
     transform translate(-50%, -50%)
     cursor pointer
-    color #fff
+    color #c0c0c0
 </style>

@@ -3,7 +3,7 @@
     <v-parallax src="/static/banner5.png" height="700">
       <v-layout row wrap justify-center align-end>
         <div class="backgroundText text-xs-center">
-          <div>Что говорят девушки, которые уже получили нашу одежду?</div>
+          <div><span class="darken">Что говорят девушки</span>, которые уже получили нашу одежду?</div>
         </div>
       </v-layout>
       <v-layout justify-center align-center>
@@ -70,5 +70,5 @@ export default {
     max-width 420px
     height 140px
     &__item
-      background-size contain
+      background-size cover
 </style>

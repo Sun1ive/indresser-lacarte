@@ -4,14 +4,14 @@
       <v-layout class="mt-5" align-center>
         <v-flex xs10 sm6 lg3>
           <div class="backgroundText text-xs-center">
-            <div>Эту коллекцию очень быстро разбирают</div>
+            <div>Эту <span class="darken">коллекцию</span> очень <span class="darken">быстро разбирают</span></div>
           </div>
         </v-flex>
       </v-layout>
       <v-layout align-center justify-end>
         <v-flex xs10 sm6 lg3>
           <div class="backgroundText text-xs-center">
-            <div>Узнайте или остался Ваш размер</div>
+            <div><span class="darken">Узнайте</span> или остался Ваш <span class="darken">размер</span></div>
           </div>
           <div class="border"></div>
           <v-form class="form text-xs-right" @submit.prevent="submit">

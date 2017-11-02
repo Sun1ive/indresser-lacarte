@@ -110,6 +110,7 @@ a
 
 .list__tile__title
   font-size 1.3rem
+  color #000
 
 .fixed
   position fixed

@@ -4,7 +4,7 @@
       <v-layout align-center justify-start>
         <v-flex xs12 sm6 lg4 class="text-xs-center">
           <div class="backgroundText">
-            <div>Получи каталог стильной коллекции</div>
+            <div><span class="darken">Получи каталог </span> стильной коллекции</div>
           </div>
           <div class="border"></div>
           <div class="text">Мы предоставим Вам перечень дизайнерской одежды</div>

@@ -6,16 +6,17 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     menu: [
-      { title: 'Pains', icon: '3d_rotation', scrollTo: '.pains' },
-      { title: 'Slider', icon: 'autorenew', scrollTo: '.slider' },
-      { title: 'Confidence', icon: 'alarm_on', scrollTo: '.confidence' },
-      { title: 'Catalog', icon: 'bookmark', scrollTo: '.catalog' },
-      { title: 'Delivery', icon: 'star', scrollTo: '.deliver' },
-      { title: 'What u ll get', icon: 'star', scrollTo: '.whatullget' },
-      { title: 'Video', icon: 'star', scrollTo: '.video' },
-      { title: 'Request', icon: 'star', scrollTo: '.request' },
-      { title: 'Collection', icon: 'star', scrollTo: '.collection' },
-      { title: 'Special', icon: 'star', scrollTo: '.special' }
+      { title: 'Вызовы', icon: 'help', scrollTo: '.pains' },
+      { title: 'О нас', icon: 'store', scrollTo: '.slider' },
+      { title: 'Гарантия', icon: 'verified_user', scrollTo: '.confidence' },
+      { title: 'Каталог', icon: 'collections', scrollTo: '.catalog' },
+      { title: 'Доставка', icon: 'local_shipping', scrollTo: '.deliver' },
+      { title: 'Отзывы', icon: 'question_answer', scrollTo: '.whatullget' },
+      { title: 'Видео', icon: 'play_arrow', scrollTo: '.video' },
+      { title: 'Заказ каталога', icon: 'email', scrollTo: '.request' },
+      { title: 'Все просто', icon: 'touch_app', scrollTo: '.collection' },
+      { title: 'Коллекция', icon: 'photo_camera', scrollTo: '.gallery' },
+      { title: 'Акция', icon: 'card_giftcard', scrollTo: '.special' }
     ],
     collection: [
       {
@@ -142,7 +143,7 @@ export const store = new Vuex.Store({
     detail: false,
     orderForm: false,
     presentForm: false,
-    present: false,
+    present: true,
   },
   mutations: {
     showCardSlider: state => {
