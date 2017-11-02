@@ -1,15 +1,29 @@
 <template>
-  <div class="present">
+  <div v-if="isVisible" class="present">
     <div class="icon" @click.stop="subscribe"></div>
   </div>
 </template>
 
 <script>
   export default {
+    data () {
+      return {
+      }
+    },
     methods: {
       subscribe () {
         this.$store.commit('showPresent');
       }
+    },
+    computed: {
+      isVisible () {
+        return this.$store.state.present
+      }
+    },
+    mounted () {
+      setTimeout (() => {
+        this.$store.commit('showPresentIcon');
+      }, 10000)
     }
   }
 </script>

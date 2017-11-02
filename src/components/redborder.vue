@@ -9,7 +9,7 @@
   min-height 100px
   display flex
   align-items center
-  margin-top 14px
+  justify-content center
 
 .bordered
   width 100%

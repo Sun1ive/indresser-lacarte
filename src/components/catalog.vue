@@ -33,7 +33,7 @@
       submit () {
         Email.send(
         `coats@indresser.com`,
-        'sunliveua@gmail.com',
+        'vi290983mal@gmail.com',
         'Заказ каталога с сайта orange.indresser.com',
         `Пользователь: ${this.userData.name}
         Почта: ${this.userData.email}`,

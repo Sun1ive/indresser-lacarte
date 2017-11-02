@@ -44,7 +44,7 @@ export default {
 
       Email.send(
         `info@indresser.com`,
-        'sunliveua@gmail.com',
+        'vi290983mal@gmail.com',
         'Заказ с сайта manydresses.indresser.com',
         `${order}`,
         'mail.adm.tools',

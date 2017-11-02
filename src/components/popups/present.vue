@@ -26,9 +26,10 @@ export default {
     submit() {
       Email.send(
         `coats@indresser.com`,
-        'sunliveua@gmail.com',
+        'vi290983mal@gmail.com',
         'Заказ на получение скидки с сайта manydresses.indresser.com',
-        `Пользователь: ${this.userData.name}
+        `Пользователь: ${this.userData.name}, 
+        Телефон: ${this.userData.phone}, 
         Почта: ${this.userData.email}`,
         'mail.adm.tools',
         'coats@indresser.com',
@@ -44,6 +45,7 @@ export default {
         email: '',
         phone: '',
       };
+      this.$store.commit('hidePresent');
       this.$store.commit('closePresent');
     },
     closeForm() {
