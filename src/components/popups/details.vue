@@ -71,6 +71,8 @@
     &__text
       font-size 1.3rem
       padding 0
+      color #fff
+      text-shadow 1px 1px 1px #333
 
 @media (max-width 420px)
   .myBtnRed

@@ -4,7 +4,7 @@
       <v-text-field  v-model="user.name" label="Укажите Ваше имя"></v-text-field>
       <v-text-field  v-model="user.phone" label="Укажите Ваш телефон"></v-text-field>
       <v-text-field  v-model="user.email" label="Укажите Ваш email"></v-text-field>
-      <v-select v-model="user.size" :items="sizes" label="Выберите размер"></v-select>
+      <!-- <v-select v-model="user.size" :items="sizes" label="Выберите размер"></v-select> -->
       <v-btn type="submit" class="myBtnRed ml-0">Отправить заявку</v-btn>
       <v-btn class="myBtnRed ml-0" @click="closeOrder">Закрыть</v-btn>
     </v-form>

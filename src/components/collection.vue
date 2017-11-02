@@ -64,33 +64,53 @@ import easy from './easy'
     margin 0 auto !important
     padding-bottom 3rem
     .wrapper
+      transition .4s
       position relative
       overflow hidden
-      box-shadow 0px 0px 5px 2px rgba(#F3B020, .7)
+      box-shadow 0px 0px 5px 2px rgba(#F3B020, .1)
 
 .redd
-  background-color rgba(255,0,0, .9) !important
+  background-color rgba(255,0,0, .4) !important
   color #fff
-  box-shadow 0px 0px 5px 1px rgba(255,0,0, .9)
+  box-shadow 0px 0px 5px 1px rgba(255,0,0, .4)
   margin-right 1rem
+    
 
 
 .gallery
   .card
-    background-color rgba(#F3B020, .7)
+    background-color rgba(#F3B020, .1);
+    transition .4s
+    box-shadow none
+    &:hover
+      background-color rgba(#F3B020, .7)
+      .redd
+        box-shadow 0px 0px 5px 1px rgba(255,0,0, .7)
+        background-color rgba(255,0,0, .7) !important
+      .wrapper
+        box-shadow 0px 0px 5px 2px rgba(#F3B020, .7)        
     &__title
       justify-content center
       font-size 1.2rem
       text-align center
-      padding 0.5rem
+      padding 0
+      &:first-child
+        padding 1rem 0 0.2rem 0
     &__text
       text-align center
       font-size 1.3rem
       font-weight bold
       padding 0
+      margin-top 2rem
     &__actions
       justify-content center
       text-align center
     &__media
       cursor pointer
+      box-shadow 0px 0px 5px 2px rgba(#c0c0c0, .9)
+
+@media only screen and (min-width 1260px) and (max-width 1440px)
+  .gallery
+    .card__title
+      font-size 1rem
 </style>

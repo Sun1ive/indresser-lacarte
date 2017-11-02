@@ -35,10 +35,9 @@
   position: fixed;
   width: 90px;
   height: 90px;
-  bottom: 8%;
+  bottom: 12%;
   left: 5px;
-  border-radius: 50%;
-  cursor: pointer;
+  border-radius: 50%
   animation: fadeOut 3s infinite linear both alternate
   &:hover
     animation none
@@ -52,5 +51,6 @@
   top 50%
   left 50%
   transform translate(-50%,-50%)
+  cursor: pointer;
 
 </style>

@@ -7,7 +7,9 @@
             <div><span class="darken">Узнайте</span> о специальном предложении</div>
           </div>
           <div class="border"></div>
-          <div class="text"><span>Мы бесплатно доставим заказ в Ваш офис или по месту проживания. А так же первым 100 клиентам дополнительная скидка 100 грн.</span></div>
+            <div class="backgroundText second">
+              <div>Мы <span class="darken">бесплатно доставим заказ</span> в Ваш офис или по месту проживания. А так же <span class="darken">первым 100 клиентам</span> дополнительная <span class="darken">скидка 100 грн.</span></div>
+          </div>
           <v-form class="form text-xs-right" @submit.prevent="submit">
             <v-text-field required v-model="userData.name" label="Укажите Ваше имя"></v-text-field>
             <v-text-field required v-model="userData.email" label="e-mail"></v-text-field>
@@ -57,14 +59,6 @@ export default {
   max-width 1280px
   margin 0 auto
   width 100%
-
-.text
-  font-size 1.2rem
-  // color #a7a7a7
-  font-weight bold
-  color #333
-  background-color rgba(#fff, .4)
-  box-shadow 0px 0px 10px 5px rgba(#fff, .4)
-  margin-bottom 2rem
-  padding .5rem
+  .second
+    margin-bottom 2rem
 </style>
